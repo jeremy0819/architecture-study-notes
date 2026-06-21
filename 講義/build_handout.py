@@ -125,6 +125,11 @@ P('涵蓋：核心思維模式・學科基本盤・都審原則・最佳答題�
   size=11, align=WD_ALIGN_PARAGRAPH.CENTER, color=RGBColor(0x40,0x40,0x40))
 P('版本 2026-06｜法規以全國法規資料庫最新版本為準、引用以法規名稱為原則',
   size=9, align=WD_ALIGN_PARAGRAPH.CENTER, color=RGBColor(0x80,0x80,0x80))
+doc.add_paragraph().paragraph_format.space_after = Pt(20)
+box('⚠️ 可信度提醒：本講義由 AI 協作生成。設計內容為「示範方案（非唯一正解）」；'
+    '法規、數字、早期年（97–107）題目細節請以官方來源為準（考選部考畢試題／全國法規資料庫）。'
+    '已上網查證：再生能源發展條例 §12-1、水利法出流管制、濕地保育法施行(104.2.2)、莫拉克條例落日(約103年)。'
+    '「本年關鍵法源」為作者判斷、非考卷用語。', fill='FCE4D6')
 pagebreak()
 
 # ============ 目錄 ============
@@ -401,6 +406,6 @@ bullets([
 P('法規條文請以全國法規資料庫（law.moj.gov.tw）最新版本為準；申論引用以法規名稱為原則，避免誤記條號。完整原卷以考選部「考畢試題查詢平台」為準。',
   size=9, color=RGBColor(0x80,0x80,0x80))
 
-out = '/home/user/architecture-study-notes/敷地計畫與都市設計_複習講義.docx'
+out = '/home/user/architecture-study-notes/講義/敷地計畫與都市設計_複習講義.docx'
 doc.save(out)
 print('SAVED', out)
