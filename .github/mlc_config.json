@@ -1,0 +1,7 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^https?://law.moj.gov.tw" },
+    { "pattern": "^https?://wwwq.moex.gov.tw" }
+  ],
+  "aliveStatusCodes": [200, 206, 301, 302, 0]
+}
