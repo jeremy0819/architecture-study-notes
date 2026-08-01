@@ -50,6 +50,7 @@
 | [references/](./references/README.md) | 入口＋[法規引用體例](./references/法規引用體例.md) |
 | [法規 DB（laws/）](./references/README.md) | 14 部核心法規的讀書用參考檔（定位/常考/常錯/可信度）|
 | [名詞字典](./references/名詞字典.md) | TOD、Placemaking、藍綠基盤、Lynch、韌性… |
+| [理論名著精要](./references/理論名著精要.md) | Lynch《敷地計畫》・White《基地分析》・詹氏《圖解都市計劃》蒸餾成可寫句，接法規與審議 |
 
 > 法規與名詞**只在 references/ 維護一次**（DRY）；歷屆解題、題眼庫等以「詳見 references/…」引用。
 
