@@ -199,7 +199,7 @@ s.txt(f.X(55), f.Y(-27), "B", 4.0, INK, "middle", "bold"); s.txt(f.X(55), f.Y(D+
 
 north(s, f.X(N+12), f.Y(-30))
 s.txt(C_X+4, TOP+312, "全區配置與地面層景觀", 6.0, INK, weight="bold")
-scalebar(s, f, C_X+C_W-118, TOP+300)
+scalebar(s, f, C_X+C_W-108, TOP+300, maxw=100.0)
 
 # ============ 中欄下半：剖面＋透視 ============
 SEC_Y = TOP+326

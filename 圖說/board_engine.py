@@ -91,7 +91,15 @@ class Fit:
         # 1mm 圖 = 1/k 公尺 → 比例 1:(1000/k)
         return f"1 : {round(1000/s.k/10)*10:,}"
 
-def scalebar(s, fit, x, y, seg=20, n=4):
+def scalebar(s, fit, x, y, seg=None, n=4, maxw=100.0):
+    """比例尺：seg 未給時自動選級距，確保總寬不超過 maxw(mm)"""
+    if seg is None:
+        for cand in (5, 10, 20, 25, 50, 100, 200, 250, 500):
+            if fit.L(cand)*n <= maxw:
+                seg = cand
+        if seg is None: seg = 5
+    while fit.L(seg)*n > maxw and n > 2:
+        n -= 1
     for i in range(n):
         s.rect(x+i*fit.L(seg), y, fit.L(seg), 1.4,
                fill=INK if i%2==0 else "#fff", stroke=INK, stroke_width=0.2)

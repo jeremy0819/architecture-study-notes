@@ -100,16 +100,16 @@
 <text x="365.92" y="309.80" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">B'</text>
 <g transform="translate(546.44,23.45) rotate(0)"><path d="M0,-5 L1.7999999999999998,2.1 L0,0.5 L-1.7999999999999998,2.1 Z" fill="#1a1a1a"/><text x="0" y="8.6" font-size="3.4" text-anchor="middle" font-weight="bold">N</text></g>
 <text x="196.00" y="318.00" font-size="6.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">全區配置與地面層景觀</text>
-<rect x="504.00" y="306.00" width="24.90" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
-<rect x="528.90" y="306.00" width="24.90" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
-<rect x="553.80" y="306.00" width="24.90" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
-<rect x="578.70" y="306.00" width="24.90" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
-<text x="504.00" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">0</text>
-<text x="528.90" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">20</text>
-<text x="553.80" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">40</text>
-<text x="578.70" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">60</text>
-<text x="603.60" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">80</text>
-<text x="553.80" y="314.00" font-size="2.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">公尺　S＝1 : 800</text>
+<rect x="514.00" y="306.00" width="24.90" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="538.90" y="306.00" width="24.90" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="563.80" y="306.00" width="24.90" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="588.70" y="306.00" width="24.90" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
+<text x="514.00" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">0</text>
+<text x="538.90" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">20</text>
+<text x="563.80" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">40</text>
+<text x="588.70" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">60</text>
+<text x="613.60" y="310.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">80</text>
+<text x="563.80" y="314.00" font-size="2.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">公尺　S＝1 : 800</text>
 <line x1="194.00" y1="327.00" x2="620.00" y2="327.00" stroke="#8a8a8a" stroke-width="0.3"/>
 <text x="196.00" y="335.40" font-size="4.4" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">A-A' 剖立面（東西向・證明都市關係）</text>
 <line x1="197.00" y1="352.20" x2="197.00" y2="355.60" stroke="#8a8a8a" stroke-width="0.25"/>
