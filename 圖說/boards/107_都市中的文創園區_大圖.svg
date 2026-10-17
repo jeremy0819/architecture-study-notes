@@ -12,7 +12,7 @@
 <line x1="6.00" y1="6.00" x2="186.00" y2="6.00" stroke="#8a8a8a" stroke-width="0.3"/>
 <rect x="7.50" y="7.50" width="177.00" height="7.00" fill="#2c3e50"/>
 <text x="9.50" y="12.60" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">① 基地硬條件與環境</text>
-<text x="9.00" y="17.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地　⚠ 正文未給面積；依題圖以鞋帶公式量取 ≒ 5,806 ㎡</text>
+<text x="9.00" y="17.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地　⚠ 正文未給面積；依題圖以兩矩形相加量取 ≒ 5,806 ㎡</text>
 <text x="9.00" y="20.90" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　〔圖推概算〕→ B≤2,322 ㎡、F≤11,612 ㎡</text>
 <text x="9.00" y="24.80" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">分區　住商混合　建蔽 40%／容積 200%</text>
 <text x="9.00" y="28.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">涵構　邊界凹口「外」有一層三合院（歷史建物）與前埕</text>
@@ -180,7 +180,7 @@
 <text x="345.91" y="248.68" font-size="2.4" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">⚠「歷史建物」不等於已完成法定歷史建築登錄</text>
 <polygon points="326.82,87.36 489.09,87.36 489.09,228.64 368.82,228.64 368.82,186.64 326.82,186.64" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.95"/>
 <text x="326.82" y="68.27" font-size="3.2" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">基地界線（依題圖量取）　正文未給面積</text>
-<text x="326.82" y="59.68" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">A ≒ 85×52＋63×22 ＝ 5,806 ㎡〔鞋帶公式・圖推概算〕→ B≤2,322、F≤11,612</text>
+<text x="326.82" y="59.68" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">A ≒ 85×52＋63×22 ＝ 5,806 ㎡〔兩矩形相加・圖推概算〕→ B≤2,322、F≤11,612</text>
 <text x="368.82" y="182.82" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">凹口（三合院在此界線之外）</text>
 <rect x="471.91" y="194.27" width="15.27" height="19.09" fill="#dfe8f2" stroke="#2f6f9f" stroke-width="0.7"/>
 <text x="479.55" y="204.77" font-size="2.8" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">捷運</text>
@@ -414,7 +414,7 @@
 <rect x="632.00" y="215.90" width="199.00" height="24.00" fill="#fdf7e8" stroke="#b8860b" stroke-width="0.35"/>
 <text x="634.50" y="220.50" font-size="3.0" fill="#8a6a1f" text-anchor="start" font-weight="bold" opacity="1">數值證據分級（本張圖）</text>
 <text x="634.50" y="225.50" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">題目給定：40%／200%、3.6 M 無遮簷人行道、廣場 600 ㎡、停車 120＋機 25</text>
-<text x="634.50" y="229.70" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">圖推概算：A ≒ 5,806 ㎡（鞋帶公式量取；正文未給面積）</text>
+<text x="634.50" y="229.70" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">圖推概算：A ≒ 5,806 ㎡（兩矩形相加量取；正文未給面積）</text>
 <text x="634.50" y="233.90" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">自訂方案：量體尺寸、樓層、開挖範圍、既有樹原地保留（原題亦准移植）</text>
 <text x="634.50" y="238.10" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">題目未指定：高度上限、開挖率上限、綠覆率 → 圖上明寫未指定</text>
 <rect x="632.00" y="244.10" width="199.00" height="13.50" fill="#fbeaea" stroke="#c0392b" stroke-width="0.35"/>
@@ -464,7 +464,7 @@
 <text x="633.00" y="348.60" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">課題→對策→效益（三行原則）</text>
 <rect x="632.00" y="352.70" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
 <text x="634.00" y="356.90" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜正文未給基地面積，數字無所依據</text>
-<text x="634.00" y="360.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜以鞋帶公式由題圖量取 ≒5,806 ㎡，並在圖上標為圖推概算</text>
+<text x="634.00" y="360.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜以兩矩形相加由題圖量取 ≒5,806 ㎡，並在圖上標為圖推概算</text>
 <text x="634.00" y="364.30" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜所有比率有同一個可校核的分母，不用舊的 2,000 ㎡</text>
 <rect x="632.00" y="366.10" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
 <text x="634.00" y="370.30" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜三合院在凹口外，新量體易壓迫</text>
@@ -503,10 +503,10 @@
 <rect x="632.00" y="454.80" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
 <text x="634.00" y="459.70" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">面積</text>
 <text x="650.00" y="459.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">正文未給</text>
-<text x="827.00" y="459.70" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 以鞋帶公式量取並標概算</text>
+<text x="827.00" y="459.70" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 以兩矩形相加量取並標概算</text>
 <rect x="632.00" y="466.00" width="199.00" height="51.00" fill="#f4f6f8" stroke="#8a8a8a" stroke-width="0.3"/>
 <text x="634.50" y="470.80" font-size="3.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">量體計算式（逐行可校核）</text>
-<text x="634.50" y="476.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">A ＝ 85×52 ＋ (85−22)×22 ＝ 4,420 ＋ 1,386 ＝ 5,806 ㎡〔鞋帶公式・圖推概算〕</text>
+<text x="634.50" y="476.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">A ＝ 85×52 ＋ (85−22)×22 ＝ 4,420 ＋ 1,386 ＝ 5,806 ㎡〔兩矩形相加・圖推概算〕</text>
 <text x="634.50" y="480.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B上限 ＝ A×40% ≒ 2,322 ㎡　F上限 ＝ A×200% ≒ 11,612 ㎡</text>
 <text x="634.50" y="485.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">題目空間項目加總 ＝ 800+90+200+250+60+300+60+200 ＝ 1,960 ㎡〔題目給定〕</text>
 <text x="634.50" y="489.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">投影 B ＝ 720＋544＋704 ＝ 1,968 ㎡　建蔽 ＝ 33.9% ≦ 40% ✓</text>
