@@ -1,0 +1,537 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="841.0mm" height="594.0mm" viewBox="0 0 841.0 594.0" font-family="Noto Sans CJK TC, Microsoft JhengHei, sans-serif">
+<defs><pattern id="tree" width="3.2" height="3.2" patternUnits="userSpaceOnUse"><circle cx="1.6" cy="1.6" r="1.25" fill="#dbead0" stroke="#6f9b5c" stroke-width="0.22"/></pattern><pattern id="plaza" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="2.6" stroke="#e0c079" stroke-width="0.55"/></pattern><pattern id="water" width="3" height="3" patternUnits="userSpaceOnUse"><path d="M0,1.5 q0.75,-0.9 1.5,0 t1.5,0" fill="none" stroke="#8fc3e3" stroke-width="0.3"/></pattern></defs>
+<rect width="841.0" height="594.0" fill="#ffffff"/>
+<defs><marker id="ar2" markerWidth="5" markerHeight="5" refX="4.2" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 z" fill="currentColor"/></marker></defs>
+<rect x="6.00" y="6.00" width="180.00" height="582.00" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="192.00" y="6.00" width="430.00" height="582.00" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="628.00" y="6.00" width="207.00" height="582.00" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="628.00" y="6.00" width="207.00" height="26.00" fill="#f4f1ea" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="731.50" y="19.00" font-size="12.5" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">水圳再生・公益綠廊</text>
+<text x="731.50" y="27.00" font-size="3.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">公益教育研修中心｜商業及住宅區 55%／360%｜水圳穿越・西臨高架</text>
+<text x="8.00" y="586.50" font-size="2.5" fill="#8a8a8a" text-anchor="start" font-weight="normal" opacity="1">112 年 敷地計畫與都市設計 80150｜考場版線稿（可校核）</text>
+<line x1="6.00" y1="6.00" x2="186.00" y2="6.00" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="7.50" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="12.60" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">① 基地硬條件與環境</text>
+<text x="9.00" y="17.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地　矩形 120 M × 70 M＝8,400 ㎡〔題目給定〕</text>
+<text x="9.00" y="20.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">分區　商業及住宅區　建蔽 55%／容積 360%〔題目平均約值〕</text>
+<text x="9.00" y="24.80" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">西　30 M 道路＋上方高架（約 10 M 高・噪音震動明顯）</text>
+<text x="9.00" y="28.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">北　15 M 道路；對側住宅 7–9 層＋鄰里公園（基地外）</text>
+<text x="9.00" y="32.60" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">南　20 M 道路（次入口）　東　10 M 道路（安靜側）</text>
+<text x="9.00" y="36.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地內　歷史水圳斜向穿越（地面下「可能」仍保有遺址）</text>
+<text x="9.00" y="40.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地內　東北角既有樹木群</text>
+<text x="9.00" y="44.30" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">△ 55%／360% 為題目提供之平均約值，非各分區法定率。</text>
+<text x="9.00" y="48.20" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">⚠ 水圳為疑似遺址，非法定禁挖區；避讓帶寬為自訂方案。</text>
+<polygon points="31.00,61.10 161.00,61.10 161.00,130.50 31.00,130.50" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.7"/>
+<text x="96.00" y="58.60" font-size="2.5" fill="#4a7a3a" text-anchor="middle" font-weight="normal" opacity="1">北 15M・對側公園</text>
+<text x="96.00" y="135.00" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">南 20M</text>
+<text x="28.50" y="95.80" font-size="2.5" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 28.50 95.80)">西 30M＋高架</text>
+<text x="163.50" y="95.80" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 163.50 95.80)">東 10M</text>
+<circle cx="111.60" cy="95.80" r="1.60" fill="#2f6f9f" opacity="0.35"/>
+<text x="111.60" y="96.70" font-size="2.3" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">水圳</text>
+<circle cx="148.00" cy="69.43" r="1.60" fill="#4a7a3a" opacity="0.35"/>
+<text x="148.00" y="70.33" font-size="2.3" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">樹群</text>
+<text x="96.00" y="95.80" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">基地</text>
+<g transform="translate(177.00,62.10) rotate(0)"><path d="M0,-4.2 L1.512,1.764 L0,0.42000000000000004 L-1.512,1.764 Z" fill="#1a1a1a"/><text x="0" y="7.800000000000001" font-size="3.4" text-anchor="middle" font-weight="bold">N</text></g>
+<line x1="6.00" y1="151.50" x2="186.00" y2="151.50" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="153.00" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="158.10" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">② 英雄條件・課題與對策</text>
+<text x="9.00" y="162.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">英雄條件：歷史水圳斜穿＋西側高架干擾</text>
+<text x="9.00" y="166.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1"></text>
+<text x="9.00" y="170.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 1　水圳穿越使基地被切開、地下有疑似遺址</text>
+<text x="9.00" y="174.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 化為線性開放軸：地面再現、優先避挖，量體分立兩側</text>
+<text x="9.00" y="178.10" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 2　西側高架噪音震動、量體大不易分割</text>
+<text x="9.00" y="182.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 高架側設隔音牆＋複層密植＋服務停車緩衝帶</text>
+<text x="9.00" y="185.90" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　 安靜機能（住宿、圖書）遠離高架，置東側</text>
+<text x="9.00" y="189.80" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 3　容積 360% 量大，恐擠壓公益開放感</text>
+<text x="9.00" y="193.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 本案僅用 6,480 ㎡（21.4%），以留空換公共性</text>
+<text x="9.00" y="197.60" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 4　東北角既有樹群易被施工破壞</text>
+<text x="9.00" y="201.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 樹群原地保留，結合庭園與兒童遊戲場，開挖避開</text>
+<circle cx="55.92" cy="234.95" r="9.50" fill="#4a7a3a" opacity="0.22"/>
+<circle cx="55.92" cy="234.95" r="9.50" fill="none" stroke="#4a7a3a" stroke-width="0.35"/>
+<text x="55.92" y="235.95" font-size="2.7" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">鄰里公園</text>
+<line x1="81.92" y1="251.95" x2="55.92" y2="234.95" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="107.92" cy="237.95" r="9.00" fill="#4a7a3a" opacity="0.22"/>
+<circle cx="107.92" cy="237.95" r="9.00" fill="none" stroke="#4a7a3a" stroke-width="0.35"/>
+<text x="107.92" y="238.95" font-size="2.7" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">既有樹群</text>
+<line x1="81.92" y1="251.95" x2="107.92" y2="237.95" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="54.92" cy="266.95" r="9.50" fill="#c0392b" opacity="0.22"/>
+<circle cx="54.92" cy="266.95" r="9.50" fill="none" stroke="#c0392b" stroke-width="0.35"/>
+<text x="54.92" y="267.95" font-size="2.7" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">高架干擾</text>
+<line x1="81.92" y1="251.95" x2="54.92" y2="266.95" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="106.92" cy="267.95" r="8.50" fill="#2f6f9f" opacity="0.22"/>
+<circle cx="106.92" cy="267.95" r="8.50" fill="none" stroke="#2f6f9f" stroke-width="0.35"/>
+<text x="106.92" y="268.95" font-size="2.7" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">水圳</text>
+<line x1="81.92" y1="251.95" x2="106.92" y2="267.95" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="81.92" cy="251.95" r="13.00" fill="url(#plaza)" opacity="0.6"/>
+<circle cx="81.92" cy="251.95" r="13.00" fill="none" stroke="#b8860b" stroke-width="0.45"/>
+<text x="81.92" y="251.55" font-size="3.0" fill="#8a6a1f" text-anchor="middle" font-weight="bold" opacity="1">公益廣場</text>
+<text x="81.92" y="255.35" font-size="2.3" fill="#8a6a1f" text-anchor="middle" font-weight="normal" opacity="1">沿圳線性開放軸</text>
+<text x="8.00" y="292.50" font-size="2.3" fill="#888" text-anchor="start" font-weight="normal" opacity="1">縮圖示意・不代表比例；正圖見中欄配置。</text>
+<line x1="6.00" y1="297.00" x2="186.00" y2="297.00" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="298.50" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="303.60" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">③ 空間需求・量體與開放空間</text>
+<text x="9.00" y="308.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">法規檢核（A/B/G/F/D 五帳）</text>
+<rect x="9.00" y="313.90" width="174.00" height="5.00" fill="#e8ecf0" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="12.48" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">項目</text>
+<text x="85.56" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">法定</text>
+<text x="130.80" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">本案</text>
+<text x="172.56" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1"></text>
+<rect x="9.00" y="318.90" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="322.30" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地 A</text>
+<text x="85.56" y="322.30" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">—</text>
+<text x="130.80" y="322.30" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">8,400 ㎡</text>
+<text x="172.56" y="322.30" font-size="2.9" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">—</text>
+<rect x="9.00" y="323.70" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="327.10" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">建蔽率</text>
+<text x="85.56" y="327.10" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">55%</text>
+<text x="130.80" y="327.10" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">33.3%</text>
+<text x="172.56" y="327.10" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="328.50" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="331.90" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">建築面積 B</text>
+<text x="85.56" y="331.90" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">≤4,620 ㎡</text>
+<text x="130.80" y="331.90" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">2,800 ㎡</text>
+<text x="172.56" y="331.90" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="333.30" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="336.70" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">容積率</text>
+<text x="85.56" y="336.70" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">360%</text>
+<text x="130.80" y="336.70" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">77.1%</text>
+<text x="172.56" y="336.70" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="338.10" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="341.50" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">計容積 F</text>
+<text x="85.56" y="341.50" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">≤30,240 ㎡</text>
+<text x="130.80" y="341.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">6,480 ㎡</text>
+<text x="172.56" y="341.50" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="342.90" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="346.30" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">開挖率 D/A</text>
+<text x="85.56" y="346.30" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">未給上限</text>
+<text x="130.80" y="346.30" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">31.8%</text>
+<text x="172.56" y="346.30" font-size="2.9" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">—</text>
+<text x="9.00" y="349.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">題目機能加總　5,300 ㎡〔題目給定項目淨面積〕</text>
+<text x="9.00" y="353.60" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">本案方案總量　6,480 ㎡〔方案：含公設與動線〕</text>
+<text x="9.00" y="357.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">研修教學 1,760 ㎡／住宿研習 2,640 ㎡／公益展演圖書 2,080 ㎡</text>
+<text x="9.00" y="361.40" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">⚠ 6,500 ㎡ 是方案假設，不得當題目給定值。</text>
+<text x="9.00" y="365.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">停車 汽 30＋機 20〔題目給定〕，全置 B1 水圳西側。</text>
+<polygon points="60.80,411.78 90.80,411.78 103.80,405.28 73.80,405.28" fill="#f2e4c9" stroke="#1a1a1a" stroke-width="0.4"/>
+<rect x="60.80" y="411.78" width="30.00" height="9.00" fill="#f2e4c9" stroke="#1a1a1a" stroke-width="0.4"/>
+<polygon points="90.80,411.78 103.80,405.28 103.80,414.28 90.80,420.78" fill="#00000012" stroke="#1a1a1a" stroke-width="0.4"/>
+<text x="105.80" y="418.08" font-size="2.5" fill="#444" text-anchor="start" font-weight="normal" opacity="1">公益展演・圖書 2F</text>
+<polygon points="60.80,391.78 94.80,391.78 107.80,385.28 73.80,385.28" fill="#d6e6f2" stroke="#1a1a1a" stroke-width="0.4"/>
+<rect x="60.80" y="391.78" width="34.00" height="13.00" fill="#d6e6f2" stroke="#1a1a1a" stroke-width="0.4"/>
+<polygon points="94.80,391.78 107.80,385.28 107.80,398.28 94.80,404.78" fill="#00000012" stroke="#1a1a1a" stroke-width="0.4"/>
+<text x="109.80" y="400.88" font-size="2.5" fill="#444" text-anchor="start" font-weight="normal" opacity="1">住宿・研習 3F</text>
+<polygon points="60.80,373.78 94.80,373.78 107.80,367.28 73.80,367.28" fill="#e6dced" stroke="#1a1a1a" stroke-width="0.4"/>
+<rect x="60.80" y="373.78" width="34.00" height="9.00" fill="#e6dced" stroke="#1a1a1a" stroke-width="0.4"/>
+<polygon points="94.80,373.78 107.80,367.28 107.80,376.28 94.80,382.78" fill="#00000012" stroke="#1a1a1a" stroke-width="0.4"/>
+<text x="109.80" y="380.08" font-size="2.5" fill="#444" text-anchor="start" font-weight="normal" opacity="1">研修教學 2F</text>
+<line x1="6.00" y1="442.50" x2="186.00" y2="442.50" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="444.00" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="449.10" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">④ 人車動線・防災與管理</text>
+<text x="9.00" y="453.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">人行　北側對鄰里公園設穿越，南側 20 M 設次入口。</text>
+<text x="9.00" y="457.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">車行　西側緩衝帶進出，避開高架匝道與北側人流。</text>
+<text x="9.00" y="461.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">卸貨　西側緩衝帶內設迴車，不進入公益廣場。</text>
+<text x="9.00" y="465.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">停車　地下 B1 汽 30／機 20〔題目給定〕；開挖止於水圳避讓帶。</text>
+<text x="9.00" y="469.10" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">防災　公益廣場為無建物避難集結地；B1 兼防空避難。</text>
+<text x="9.00" y="473.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">水文　沿圳設草溝與雨花園，透水鋪面；出流經滯蓄後排放。</text>
+<text x="9.00" y="476.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">振動　僅靠擋牆與服務帶不足以隔絕地傳振動，</text>
+<text x="9.00" y="480.80" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　須另作結構隔振或距離評估〔本案標為待評估〕。</text>
+<text x="9.00" y="484.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">管理　公益展演獨立出入口，假日可單獨開放。</text>
+<polygon points="32.00,492.60 160.00,492.60 160.00,558.00 32.00,558.00" fill="#fafaf8" stroke="#1a1a1a" stroke-width="0.6"/>
+<rect x="42.24" y="499.14" width="43.52" height="18.31" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="64.00" y="509.30" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">研修</text>
+<rect x="42.24" y="528.57" width="43.52" height="18.31" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="64.00" y="538.73" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">住宿</text>
+<rect x="126.72" y="505.68" width="28.16" height="35.97" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="140.80" y="524.66" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">展演</text>
+<polygon points="93.44,493.91 108.80,493.91 96.00,556.69 80.64,556.69" fill="url(#water)" opacity="0.55" stroke="#2f6f9f" stroke-width="0.3"/>
+<text x="94.72" y="525.30" font-size="2.5" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">水圳綠廊</text>
+<path d="M 70.4 481.6 L 70.4 491.1" stroke="#c0392b" stroke-width="1.1" fill="none" color="#c0392b" marker-end="url(#ar2)"/>
+<text x="70.40" y="480.10" font-size="2.25" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">主人行（對公園）</text>
+<path d="M 96.0 569.0 L 96.0 559.5" stroke="#c0392b" stroke-width="1.1" fill="none" color="#c0392b" marker-end="url(#ar2)"/>
+<text x="96.00" y="571.50" font-size="2.25" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">南側次入口</text>
+<path d="M 21.0 539.7 L 30.5 539.7" stroke="#2f6f9f" stroke-width="1.1" fill="none" color="#2f6f9f" marker-end="url(#ar2)"/>
+<text x="9.00" y="537.69" font-size="2.25" fill="#2f6f9f" text-anchor="start" font-weight="normal" opacity="1">車行・卸貨</text>
+<path d="M 21.0 547.5 L 30.5 547.5" stroke="#7a5ea8" stroke-width="1.1" fill="none" color="#7a5ea8" marker-end="url(#ar2)"/>
+<text x="9.00" y="545.54" font-size="2.25" fill="#7a5ea8" text-anchor="start" font-weight="normal" opacity="1">地下車道</text>
+<path d="M 171.0 525.3 L 158.7 525.3" stroke="#4a7a3a" stroke-width="1.1" fill="none" color="#4a7a3a" marker-end="url(#ar2)"/>
+<text x="183.00" y="523.30" font-size="2.25" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">自行車</text>
+<line x1="10.00" y1="574.00" x2="16.00" y2="574.00" stroke="#c0392b" stroke-width="1.1"/>
+<text x="18.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">人行</text>
+<line x1="50.00" y1="574.00" x2="56.00" y2="574.00" stroke="#2f6f9f" stroke-width="1.1"/>
+<text x="58.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">車行</text>
+<line x1="90.00" y1="574.00" x2="96.00" y2="574.00" stroke="#7a5ea8" stroke-width="1.1"/>
+<text x="98.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">地下車道</text>
+<line x1="130.00" y1="574.00" x2="136.00" y2="574.00" stroke="#4a7a3a" stroke-width="1.1"/>
+<text x="138.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">自行車</text>
+<text x="10.00" y="579.60" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">人車分道：車行只走西側緩衝帶；水圳綠廊全線步行，災時為避難動線。</text>
+<rect x="224.67" y="56.58" width="68.37" height="239.30" fill="#e8e6e2"/>
+<rect x="224.67" y="56.58" width="364.65" height="34.19" fill="#e8e6e2"/>
+<rect x="224.67" y="250.30" width="364.65" height="45.58" fill="#e8e6e2"/>
+<rect x="566.53" y="56.58" width="22.79" height="239.30" fill="#e8e6e2"/>
+<rect x="242.91" y="56.58" width="20.51" height="239.30" fill="#d8d4cc" stroke="#8a8a8a" stroke-width="0.4"/>
+<rect x="249.74" y="67.98" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="249.74" y="99.88" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="249.74" y="131.79" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="249.74" y="163.70" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="249.74" y="195.60" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="249.74" y="227.51" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="249.74" y="259.42" width="6.84" height="6.84" fill="#b9b4aa" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="253.16" y="170.53" font-size="3.0" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1" transform="rotate(-90 253.16 170.53)">西側高架道路（約 10 M 高・噪音震動明顯）</text>
+<text x="279.37" y="170.53" font-size="2.8" fill="#555" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 279.37 170.53)">西側 30 M 道路</text>
+<text x="429.79" y="72.53" font-size="2.9" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">北側 15 M 道路（對側住宅 7–9 層）</text>
+<text x="429.79" y="275.37" font-size="2.9" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">南側 20 M 道路（次入口）</text>
+<text x="577.93" y="170.53" font-size="2.8" fill="#555" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 577.93 170.53)">東側 10 M 道路（安靜側）</text>
+<rect x="311.28" y="15.56" width="123.07" height="36.47" fill="url(#tree)" stroke="#4a7a3a" stroke-width="0.4"/>
+<text x="372.81" y="29.23" font-size="3.0" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">鄰里公園（基地外）</text>
+<text x="372.81" y="39.49" font-size="2.4" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">隔 15 M 道路・借景不計入 A</text>
+<polygon points="293.05,90.77 566.53,90.77 566.53,250.30 293.05,250.30" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.9"/>
+<text x="297.60" y="83.47" font-size="3.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">基地界線　東西 120 M／南北 70 M（矩形）</text>
+<text x="297.60" y="73.45" font-size="2.6" fill="#555" text-anchor="start" font-weight="normal" opacity="1">A＝120×70＝8,400 ㎡〔題目給定〕</text>
+<polygon points="461.70,90.77 489.05,90.77 454.86,250.30 427.51,250.30" fill="url(#water)" opacity="0.75" stroke="#2f6f9f" stroke-width="0.5"/>
+<path d="M 475.37 90.77 L 470.49 113.56 L 465.60 136.35 L 460.72 159.14 L 455.84 181.93 L 450.95 204.72 L 446.07 227.51 L 441.19 250.30" fill="none" stroke="#2f6f9f" stroke-width="0.9" stroke-dasharray="4 2"/>
+<text x="458.28" y="170.53" font-size="4.4" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1" transform="rotate(-78 458.28 170.53)">水圳線性綠廊</text>
+<text x="463.78" y="170.53" font-size="2.5" fill="#2f6f9f" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-78 463.78 170.53)">地面再現・優先避挖</text>
+<text x="447.05" y="227.51" font-size="2.5" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">疑似水圳範圍：文資法 §57</text>
+<text x="445.09" y="236.63" font-size="2.3" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">營建中發見應停工通報，審議完成前不得復工</text>
+<circle cx="527.79" cy="102.16" r="9.57" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.3"/>
+<circle cx="543.74" cy="109.00" r="9.57" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.3"/>
+<circle cx="557.42" cy="99.88" r="9.57" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.3"/>
+<circle cx="539.19" cy="118.12" r="9.57" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.3"/>
+<circle cx="555.14" cy="115.84" r="9.57" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.3"/>
+<text x="539.19" y="130.65" font-size="2.7" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">東北角既有樹群（基地內・原地保留）</text>
+<rect x="293.05" y="90.77" width="20.51" height="159.53" fill="#efece6" stroke="#8a8a8a" stroke-width="0.35"/>
+<text x="303.30" y="170.53" font-size="2.6" fill="#666" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 303.30 170.53)">隔音牆＋複層密植緩衝帶（服務・卸貨）</text>
+<rect x="320.40" y="109.00" width="91.16" height="50.14" fill="#e6dced" stroke="#1a1a1a" stroke-width="0.6"/>
+<text x="365.98" y="133.07" font-size="3.8" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">研修教學棟</text>
+<text x="365.98" y="137.27" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">1,760㎡ / 2F</text>
+<rect x="320.40" y="181.93" width="91.16" height="50.14" fill="#d6e6f2" stroke="#1a1a1a" stroke-width="0.6"/>
+<text x="365.98" y="206.00" font-size="3.8" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">住宿・研習棟</text>
+<text x="365.98" y="210.20" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">2,640㎡ / 3F</text>
+<rect x="498.16" y="127.23" width="59.26" height="91.16" fill="#f2e4c9" stroke="#1a1a1a" stroke-width="0.6"/>
+<text x="527.79" y="171.81" font-size="3.8" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">公益展演・圖書</text>
+<text x="527.79" y="176.01" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">2,080㎡ / 2F</text>
+<polygon points="425.23,95.33 457.14,95.33 429.79,245.74 397.88,245.74" fill="url(#plaza)" opacity="0.45" stroke="#b8860b" stroke-width="0.35"/>
+<text x="429.79" y="136.35" font-size="3.6" fill="#8a6a1f" text-anchor="middle" font-weight="bold" opacity="1">公益廣場</text>
+<text x="429.79" y="146.60" font-size="2.4" fill="#8a6a1f" text-anchor="middle" font-weight="normal" opacity="1">沿圳展開・避難集結</text>
+<circle cx="311.28" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="336.35" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="361.42" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="386.49" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="411.56" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="436.63" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="461.70" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="486.77" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="511.84" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="536.91" cy="81.65" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="311.28" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="336.35" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="361.42" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="386.49" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="411.56" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="436.63" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="461.70" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="486.77" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="511.84" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<circle cx="536.91" cy="259.42" r="6.84" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.2"/>
+<line x1="372.81" y1="90.77" x2="388.81" y2="85.77" stroke="#c0392b" stroke-width="0.25"/>
+<circle cx="372.81" cy="90.77" r="0.55" fill="#c0392b"/>
+<text x="390.01" y="86.67" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">主人行入口－對鄰里公園穿越</text>
+<line x1="429.79" y1="250.30" x2="445.79" y2="245.30" stroke="#c0392b" stroke-width="0.25"/>
+<circle cx="429.79" cy="250.30" r="0.55" fill="#c0392b"/>
+<text x="446.99" y="246.20" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">南側次入口－20 M 道路</text>
+<line x1="293.05" y1="209.28" x2="309.05" y2="204.28" stroke="#2f6f9f" stroke-width="0.25"/>
+<circle cx="293.05" cy="209.28" r="0.55" fill="#2f6f9f"/>
+<text x="310.25" y="205.18" font-size="2.6" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">車行・卸貨－西側緩衝帶（避高架匝道）</text>
+<line x1="293.05" y1="227.51" x2="309.05" y2="222.51" stroke="#7a5ea8" stroke-width="0.25"/>
+<circle cx="293.05" cy="227.51" r="0.55" fill="#7a5ea8"/>
+<text x="310.25" y="223.41" font-size="2.6" fill="#7a5ea8" text-anchor="start" font-weight="bold" opacity="1">地下車道出入口（B1 停車）</text>
+<line x1="566.53" y1="172.81" x2="550.53" y2="167.81" stroke="#4a7a3a" stroke-width="0.25"/>
+<circle cx="566.53" cy="172.81" r="0.55" fill="#4a7a3a"/>
+<text x="549.33" y="168.71" font-size="2.6" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">東側安靜側・自行車</text>
+<path d="M 315.84 104.44 L 420.67 104.44 L 420.67 236.63 L 315.84 236.63 Z" fill="none" stroke="#c0392b" stroke-width="0.7" stroke-dasharray="2.6 1.6"/>
+<text x="320.40" y="227.51" font-size="2.8" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">地下開挖範圍（B1 停車・汽30 機20）</text>
+<text x="320.40" y="235.49" font-size="2.4" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">D＝2,668 ㎡　D/A＝31.8%〔題目未給上限〕　全區止於水圳避讓帶西緣</text>
+<line x1="220.12" y1="163.70" x2="593.88" y2="163.70" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="5 1.6 1.4 1.6"/>
+<text x="213.28" y="165.98" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">A</text>
+<text x="600.72" y="165.98" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">A'</text>
+<line x1="365.98" y1="52.02" x2="365.98" y2="300.44" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="5 1.6 1.4 1.6"/>
+<text x="365.98" y="45.19" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">B</text>
+<text x="365.98" y="311.84" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">B'</text>
+<g transform="translate(580.21,26.95) rotate(0)"><path d="M0,-5 L1.7999999999999998,2.1 L0,0.5 L-1.7999999999999998,2.1 Z" fill="#1a1a1a"/><text x="0" y="8.6" font-size="3.4" text-anchor="middle" font-weight="bold">N</text></g>
+<text x="196.00" y="302.00" font-size="6.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">全區配置與地面層景觀（含水圳避讓與開挖範圍）</text>
+<rect x="514.00" y="290.00" width="22.79" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="536.79" y="290.00" width="22.79" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="559.58" y="290.00" width="22.79" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="582.37" y="290.00" width="22.79" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
+<text x="514.00" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">0</text>
+<text x="536.79" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">10</text>
+<text x="559.58" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">20</text>
+<text x="582.37" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">30</text>
+<text x="605.16" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">40</text>
+<text x="559.58" y="298.00" font-size="2.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">公尺　S＝1 : 440</text>
+<line x1="194.00" y1="311.00" x2="620.00" y2="311.00" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="196.00" y="319.40" font-size="4.4" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">A-A' 剖立面（東西向・證明高架緩衝與水圳關係）</text>
+<line x1="197.00" y1="334.00" x2="197.00" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="238.18" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">高架下 30M 道路 30M</text>
+<line x1="279.35" y1="334.00" x2="279.35" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="291.71" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">緩衝帶 9M</text>
+<line x1="304.06" y1="334.00" x2="304.06" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="358.96" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">住宿・研習棟 40M</text>
+<line x1="413.86" y1="334.00" x2="413.86" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="449.55" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">公益廣場 26M</text>
+<line x1="485.24" y1="334.00" x2="485.24" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="501.71" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">水圳綠廊 12M</text>
+<line x1="518.18" y1="334.00" x2="518.18" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="553.86" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">公益展演 26M</text>
+<line x1="589.55" y1="334.00" x2="589.55" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="603.27" y="336.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">東 10M 道路 10M</text>
+<line x1="197.00" y1="337.40" x2="617.00" y2="337.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="197.00" y="343.00" width="82.35" height="22.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="238.18" y="341.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">高架約 10M＋橋墩</text>
+<rect x="589.55" y="351.00" width="27.45" height="14.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="603.27" y="349.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">對街</text>
+<line x1="197.00" y1="365.00" x2="617.00" y2="365.00" stroke="#1a1a1a" stroke-width="0.8"/>
+<rect x="304.06" y="365.00" width="71.37" height="9.00" fill="#f7f7f5" stroke="#1a1a1a" stroke-width="0.45" stroke-dasharray="2 1.2"/>
+<text x="339.75" y="372.40" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">B1 停車（開挖止於水圳西緣）</text>
+<rect x="304.06" y="358.60" width="109.80" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="305.46" y="363.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
+<rect x="304.06" y="352.20" width="109.80" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="305.46" y="356.90" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">2F</text>
+<rect x="304.06" y="345.80" width="109.80" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="305.46" y="350.50" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">3F</text>
+<text x="358.96" y="343.40" font-size="3.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">住宿・研習棟</text>
+<text x="414.76" y="348.40" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">3F</text>
+<rect x="518.18" y="358.60" width="71.37" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="519.58" y="363.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
+<rect x="518.18" y="352.20" width="71.37" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="519.58" y="356.90" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">2F</text>
+<text x="553.86" y="349.80" font-size="3.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">公益展演・圖書</text>
+<text x="590.45" y="354.80" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">2F</text>
+<text x="197.00" y="375.50" font-size="2.35" fill="#555" text-anchor="start" font-weight="normal" opacity="1">樓高 1F 4.2M／2–3F 各 3.6M。高架側依序為隔音牆、複層密植、服務停車緩衝；安靜機能退至東側。</text>
+<text x="196.00" y="389.40" font-size="4.4" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">B-B' 剖立面（南北向・證明機能與高度）</text>
+<line x1="197.00" y1="398.00" x2="197.00" y2="401.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="229.47" y="400.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">北 15M 道路 15M</text>
+<line x1="261.95" y1="398.00" x2="261.95" y2="401.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="309.58" y="400.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">研修教學棟 22M</text>
+<line x1="357.21" y1="398.00" x2="357.21" y2="401.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="396.18" y="400.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">中庭 18M</text>
+<line x1="435.14" y1="398.00" x2="435.14" y2="401.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="482.77" y="400.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">住宿・研習棟 22M</text>
+<line x1="530.40" y1="398.00" x2="530.40" y2="401.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="573.70" y="400.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">南 20M 道路 20M</text>
+<line x1="197.00" y1="401.40" x2="617.00" y2="401.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="197.00" y="407.00" width="64.95" height="26.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="229.47" y="405.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">對側住宅 7–9F</text>
+<rect x="530.40" y="423.00" width="86.60" height="10.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="573.70" y="421.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">對街</text>
+<line x1="197.00" y1="433.00" x2="617.00" y2="433.00" stroke="#1a1a1a" stroke-width="0.8"/>
+<rect x="261.95" y="426.60" width="95.26" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="263.35" y="431.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
+<rect x="261.95" y="420.20" width="95.26" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="263.35" y="424.90" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">2F</text>
+<text x="309.58" y="417.80" font-size="3.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">研修教學棟</text>
+<text x="358.11" y="422.80" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">2F</text>
+<rect x="435.14" y="426.60" width="95.26" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="436.54" y="431.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
+<rect x="435.14" y="420.20" width="95.26" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="436.54" y="424.90" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">2F</text>
+<rect x="435.14" y="413.80" width="95.26" height="6.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="436.54" y="418.50" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">3F</text>
+<text x="482.77" y="411.40" font-size="3.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">住宿・研習棟</text>
+<text x="531.30" y="416.40" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">3F</text>
+<text x="197.00" y="443.50" font-size="2.35" fill="#555" text-anchor="start" font-weight="normal" opacity="1">量體 2–3 層，低於對側住宅 7–9 層，天際線由北向南遞降；中庭南向採光、兼通風廊道。</text>
+<text x="196.00" y="456.00" font-size="5.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">局部透視　水圳綠廊由南望北</text>
+<rect x="194.00" y="460.00" width="426.00" height="110.00" fill="#fff" stroke="#8a8a8a" stroke-width="0.35"/>
+<line x1="198.00" y1="554.00" x2="616.00" y2="554.00" stroke="#1a1a1a" stroke-width="0.5"/>
+<rect x="206.36" y="528.00" width="100.32" height="26.00" fill="#f1eef6" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="256.52" y="526.20" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">住宿・研習棟 3F</text>
+<rect x="490.60" y="534.00" width="108.68" height="20.00" fill="#f1eef6" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="544.94" y="532.20" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">公益展演 2F</text>
+<line x1="331.76" y1="554.00" x2="331.76" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="331.76" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<line x1="365.20" y1="554.00" x2="365.20" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="365.20" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<line x1="402.82" y1="554.00" x2="402.82" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="402.82" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<line x1="440.44" y1="554.00" x2="440.44" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="440.44" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<line x1="473.88" y1="554.00" x2="473.88" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="473.88" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<circle cx="323.40" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="323.40" y1="549.40" x2="323.40" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="322.10" y1="554.00" x2="323.40" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="324.70" y1="554.00" x2="323.40" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="348.48" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="348.48" y1="549.40" x2="348.48" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="347.18" y1="554.00" x2="348.48" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="349.78" y1="554.00" x2="348.48" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="386.10" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="386.10" y1="549.40" x2="386.10" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="384.80" y1="554.00" x2="386.10" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="387.40" y1="554.00" x2="386.10" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="419.54" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="419.54" y1="549.40" x2="419.54" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="418.24" y1="554.00" x2="419.54" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="420.84" y1="554.00" x2="419.54" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="457.16" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="457.16" y1="549.40" x2="457.16" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="455.86" y1="554.00" x2="457.16" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="458.46" y1="554.00" x2="457.16" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="482.24" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="482.24" y1="549.40" x2="482.24" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="480.94" y1="554.00" x2="482.24" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="483.54" y1="554.00" x2="482.24" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<path d="M 323.4 558.0 q 6,-2.4 12,0 t 12,0 t 12,0 t 12,0 t 12,0" fill="none" stroke="#2f6f9f" stroke-width="0.5"/>
+<text x="482.24" y="556.00" font-size="2.4" fill="#2f6f9f" text-anchor="end" font-weight="normal" opacity="1">水圳地面再現（明渠・可親水）</text>
+<text x="196.00" y="573.40" font-size="2.6" fill="#444" text-anchor="start" font-weight="normal" opacity="1">水圳以明渠地面再現，兩側草溝與複層密植吸收高架噪音；步道連南北兩入口，成為全區公共軸。</text>
+<text x="196.00" y="577.40" font-size="2.6" fill="#444" text-anchor="start" font-weight="normal" opacity="1">沿圳設座椅與解說，說明此處為疑似水圳範圍、地下優先避挖——把法規限制畫成公共空間的理由。</text>
+<rect x="630.00" y="38.00" width="203.00" height="8.00" fill="#2c3e50"/>
+<text x="633.00" y="43.80" font-size="4.2" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">申論題（30 分）</text>
+<text x="632.00" y="50.00" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" opacity="1">說明敷地計畫中「非量化基地分析」的意義，並以本案</text>
+<text x="632.00" y="54.00" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" opacity="1">為例，說明哪些非量化資訊影響配置決策，如何取得，</text>
+<text x="632.00" y="58.00" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" opacity="1">以及如何在圖面上被讀出來。</text>
+<text x="632.00" y="65.00" font-size="3.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">（一）非量化資訊的三個來源</text>
+<rect x="632.00" y="70.50" width="16.00" height="9.50" fill="#eef2f6" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="640.00" y="76.50" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">現場</text>
+<text x="650.00" y="74.50" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">感官與行為：噪音、震動、氣味、日照</text>
+<text x="650.00" y="78.50" font-size="2.35" fill="#777" text-anchor="start" font-weight="normal" opacity="1">高架下實地停留、不同時段記錄</text>
+<rect x="632.00" y="81.00" width="16.00" height="9.50" fill="#eef2f6" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="640.00" y="87.00" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">文獻</text>
+<text x="650.00" y="85.00" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">地籍圖、舊航照、水利圖、口述</text>
+<text x="650.00" y="89.00" font-size="2.35" fill="#777" text-anchor="start" font-weight="normal" opacity="1">水圳走向與舊河道靠舊圖比對</text>
+<rect x="632.00" y="91.50" width="16.00" height="9.50" fill="#eef2f6" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="640.00" y="97.50" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">法制</text>
+<text x="650.00" y="95.50" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">疑似遺址、文資通報、都審意見</text>
+<text x="650.00" y="99.50" font-size="2.35" fill="#777" text-anchor="start" font-weight="normal" opacity="1">文資法 §57、地方都審紀錄</text>
+<text x="632.00" y="104.00" font-size="3.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">（二）本案三項決定性的非量化資訊</text>
+<text x="632.00" y="110.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">1. 水圳是「記憶的線」而非只是障礙 → 由避讓轉為公共軸。</text>
+<text x="632.00" y="115.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">2. 高架的干擾是連續的、方向性的 → 用帶狀緩衝而非點狀屏障。</text>
+<text x="632.00" y="119.10" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">3. 東北樹群是既有的社會場所 → 保留比新植更有價值。</text>
+<rect x="632.00" y="122.80" width="199.00" height="12.40" fill="#eef5ea" stroke="#4a7a3a" stroke-width="0.3"/>
+<text x="634.00" y="127.40" font-size="2.5" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">⚠ 題目說地下「可能」仍保有遺址＝疑似，</text>
+<text x="634.00" y="131.40" font-size="2.5" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">　 非法定禁挖區；寫「優先避挖，調查確認後調整」。</text>
+<text x="632.00" y="139.20" font-size="3.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">（三）小結</text>
+<text x="632.00" y="146.10" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">量化資訊決定「能放多少」，非量化資訊決定「該放哪裡」。</text>
+<text x="632.00" y="150.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">本案容積只用 21.4%，正是非量化判斷壓過量體最大化的結果。</text>
+<rect x="630.00" y="156.90" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="162.30" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">本年官方圖說要求｜逐項打勾</text>
+<rect x="632.00" y="166.40" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="170.20" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">規劃理念與全區配置</text>
+<text x="634.50" y="173.80" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">含水圳因應、開挖範圍、人車動線、防救災</text>
+<text x="827.00" y="172.20" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="176.00" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="179.80" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">機能關係圖</text>
+<text x="634.50" y="183.40" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">研修／住宿／公益展演三群與水圳軸之關係</text>
+<text x="827.00" y="181.80" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="185.60" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="189.40" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">剖立面各 ≥1</text>
+<text x="634.50" y="193.00" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">A-A' 東西向（高架緩衝）／B-B' 南北向（高度）</text>
+<text x="827.00" y="191.40" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="195.20" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="199.00" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">透視 ≥1</text>
+<text x="634.50" y="202.60" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">水圳綠廊由南望北，含人物與尺度</text>
+<text x="827.00" y="201.00" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="207.80" width="199.00" height="24.00" fill="#fdf7e8" stroke="#b8860b" stroke-width="0.35"/>
+<text x="634.50" y="212.40" font-size="3.0" fill="#8a6a1f" text-anchor="start" font-weight="bold" opacity="1">數值證據分級（本張圖）</text>
+<text x="634.50" y="217.40" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">題目給定：120×70＝8,400 ㎡、55%／360%（平均約值）、停車汽30機20</text>
+<text x="634.50" y="221.60" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">圖推概算：水圳走向由題圖虛線量取，(80,0)→(65,70)</text>
+<text x="634.50" y="225.80" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">自訂方案：避讓半寬 6 M、量體分區、樓層、開挖範圍、6,480 ㎡ 總量</text>
+<text x="634.50" y="230.00" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">題目未指定：高度上限、開挖率上限、綠覆率 → 圖上明寫未指定</text>
+<rect x="632.00" y="236.00" width="199.00" height="13.50" fill="#fbeaea" stroke="#c0392b" stroke-width="0.35"/>
+<text x="634.50" y="240.60" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">交卷前：圖名・比例尺・指北・剖面樓高數字、</text>
+<text x="634.50" y="244.40" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">透視有人物、每條算式數字與圖上一致、</text>
+<text x="634.50" y="248.20" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">題目點名條件逐條指得出位置。</text>
+<rect x="630.00" y="253.00" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="258.40" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">法規檢核｜法源→本案落點</text>
+<rect x="632.00" y="262.50" width="199.00" height="6.00" fill="#e8ecf0" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.00" y="266.70" font-size="2.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">法源（簡稱）</text>
+<text x="686.00" y="266.70" font-size="2.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">要求</text>
+<text x="758.00" y="266.70" font-size="2.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">本案落點</text>
+<rect x="632.00" y="268.50" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="273.40" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">文資法 §57</text>
+<text x="686.00" y="273.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">發見疑似遺址應通報；施工中停工</text>
+<text x="758.00" y="273.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">水圳帶優先避挖，圖上註停工通報程序</text>
+<rect x="632.00" y="275.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="280.60" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">都計法 §22</text>
+<text x="686.00" y="280.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">細部計畫定土地使用分區管制</text>
+<text x="758.00" y="280.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">商業及住宅區 55%／360%（題目值）</text>
+<rect x="632.00" y="282.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="287.80" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">通盤檢討辦法</text>
+<text x="686.00" y="287.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">都市設計應表明地下室開挖之限制</text>
+<text x="758.00" y="287.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">開挖止於水圳避讓帶西緣，D/A＝31.8%</text>
+<rect x="632.00" y="290.10" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="295.00" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §162-1-3</text>
+<text x="686.00" y="295.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">法定停車空間得不計入容積</text>
+<text x="758.00" y="295.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B1 汽30 機20 不計入 F</text>
+<rect x="632.00" y="297.30" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="302.20" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §302</text>
+<text x="686.00" y="302.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">建築基地綠化量</text>
+<text x="758.00" y="302.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">沿圳複層密植＋東北樹群保留</text>
+<rect x="632.00" y="304.50" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="309.40" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §305</text>
+<text x="686.00" y="309.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地保水</text>
+<text x="758.00" y="309.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">透水鋪面＋草溝＋雨花園</text>
+<rect x="632.00" y="311.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="316.60" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §4-3</text>
+<text x="686.00" y="316.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">雨水貯集：基地面積×0.045 m³/㎡</text>
+<text x="758.00" y="316.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">8,400×0.045＝378 m³</text>
+<rect x="632.00" y="318.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="323.80" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">噪音管制法</text>
+<text x="686.00" y="323.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">交通噪音防制</text>
+<text x="758.00" y="323.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">隔音牆＋複層密植＋緩衝量體（振動另評估）</text>
+<text x="632.00" y="329.70" font-size="2.4" fill="#888" text-anchor="start" font-weight="normal" opacity="1">※ 條號僅供本庫查核；考場圖上寫簡稱即可，不背條號。</text>
+<rect x="630.00" y="335.10" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="340.50" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">課題→對策→效益（三行原則）</text>
+<rect x="632.00" y="344.60" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="348.80" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜水圳斜穿把基地切成兩半</text>
+<text x="634.00" y="352.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜不視為障礙，改為線性開放軸；量體分立東西兩側，地下開挖止於西緣</text>
+<text x="634.00" y="356.20" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜限制變成全區唯一的公共軸線</text>
+<rect x="632.00" y="358.00" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="362.20" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜西側高架噪音與震動連續且有方向性</text>
+<text x="634.00" y="366.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜帶狀緩衝：隔音牆＋複層密植＋服務停車；安靜機能全部退到東側</text>
+<text x="634.00" y="369.60" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜干擾在進入建築前已被三層削減</text>
+<rect x="632.00" y="371.40" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="375.60" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜容積 360% 量大，恐把公益感擠掉</text>
+<text x="634.00" y="379.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜只用 21.4% 容積、建蔽 33.3%，其餘還給廣場與綠廊</text>
+<text x="634.00" y="383.00" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜公益性用留空證明，不是用標語</text>
+<rect x="632.00" y="384.80" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="389.00" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜東北樹群易在施工期損失</text>
+<text x="634.00" y="392.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜樹群原地保留為庭園與兒童遊戲場，開挖線退開，設施工圍籬範圍</text>
+<text x="634.00" y="396.40" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜既有社會場所延續，綠覆不必從零長起</text>
+<rect x="630.00" y="401.20" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="406.60" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">基地核對｜與官方底圖疊合</text>
+<rect x="632.00" y="410.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="415.60" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">道路</text>
+<text x="650.00" y="415.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">西 30M／北 15M／南 20M／東 10M</text>
+<text x="827.00" y="415.60" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 未新增、未拓寬</text>
+<rect x="632.00" y="417.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="422.80" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">高架</text>
+<text x="650.00" y="422.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">西側道路上方，約 10 M 高</text>
+<text x="827.00" y="422.80" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 位置未移，畫出橋墩</text>
+<rect x="632.00" y="425.10" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="430.00" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">水圳</text>
+<text x="650.00" y="430.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">斜向穿越，題圖為虛線</text>
+<text x="827.00" y="430.00" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 走向未改，僅加註避讓帶</text>
+<rect x="632.00" y="432.30" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="437.20" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">樹群</text>
+<text x="650.00" y="437.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">東北角基地內既有樹木群</text>
+<text x="827.00" y="437.20" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 原地保留，未移植</text>
+<rect x="632.00" y="439.50" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="444.40" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">公園</text>
+<text x="650.00" y="444.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">北側鄰里公園在基地外</text>
+<text x="827.00" y="444.40" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 隔 15M 道路，不計入 A</text>
+<rect x="632.00" y="446.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="451.60" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">界線</text>
+<text x="650.00" y="451.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">矩形 120×70，無凹口</text>
+<text x="827.00" y="451.60" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 量體與開挖均在界內</text>
+<rect x="632.00" y="457.90" width="199.00" height="46.60" fill="#f4f6f8" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="634.50" y="462.70" font-size="3.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">量體計算式（逐行可校核）</text>
+<text x="634.50" y="468.10" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">A ＝ 120 × 70 ＝ 8,400 ㎡〔題目給定〕</text>
+<text x="634.50" y="472.50" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B上限 ＝ A×55% ＝ 4,620 ㎡　F上限 ＝ A×360% ＝ 30,240 ㎡〔題目平均約值〕</text>
+<text x="634.50" y="476.90" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">題目機能加總 ＝ 5,300 ㎡〔題目給定項目淨面積〕</text>
+<text x="634.50" y="481.30" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">投影 B ＝ 研修 880＋住宿 880＋展演 1,040 ＝ 2,800 ㎡　建蔽 ＝ 33.3% ≦ 55% ✓</text>
+<text x="634.50" y="485.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">G ＝ 880×2＋880×3＋1,040×2 ＝ 6,480 ㎡　容積率 ＝ 77.1% ≦ 360% ✓</text>
+<text x="634.50" y="490.10" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">F 用量 ＝ 6,480 / 30,240 ＝ 21.4%（刻意不用滿，換取沿圳留空）</text>
+<text x="634.50" y="494.50" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">開挖 D ＝ 46M × 58M ＝ 2,668 ㎡　開挖率 ＝ 31.8%〔題目未給上限〕</text>
+<text x="634.50" y="498.90" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">雨水貯集 ＝ 8,400 × 0.045 ＝ 378 m³（技則 §4-3）</text>
+<text x="632.00" y="585.00" font-size="2.4" fill="#999" text-anchor="start" font-weight="normal" opacity="1">112 年 公益教育研修中心｜80150 敷地計畫與都市設計｜考場復原稿（可校核線稿）</text>
+</svg>

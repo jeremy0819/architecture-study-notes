@@ -1,0 +1,485 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="841.0mm" height="594.0mm" viewBox="0 0 841.0 594.0" font-family="Noto Sans CJK TC, Microsoft JhengHei, sans-serif">
+<defs><pattern id="tree" width="3.2" height="3.2" patternUnits="userSpaceOnUse"><circle cx="1.6" cy="1.6" r="1.25" fill="#dbead0" stroke="#6f9b5c" stroke-width="0.22"/></pattern><pattern id="plaza" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="2.6" stroke="#e0c079" stroke-width="0.55"/></pattern><pattern id="water" width="3" height="3" patternUnits="userSpaceOnUse"><path d="M0,1.5 q0.75,-0.9 1.5,0 t1.5,0" fill="none" stroke="#8fc3e3" stroke-width="0.3"/></pattern></defs>
+<rect width="841.0" height="594.0" fill="#ffffff"/>
+<defs><marker id="ar2" markerWidth="5" markerHeight="5" refX="4.2" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 z" fill="currentColor"/></marker></defs>
+<rect x="6.00" y="6.00" width="180.00" height="582.00" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="192.00" y="6.00" width="430.00" height="582.00" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="628.00" y="6.00" width="207.00" height="582.00" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="628.00" y="6.00" width="207.00" height="26.00" fill="#f4f1ea" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="731.50" y="19.00" font-size="12.5" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">老樹客廳・風與綠的學苑</text>
+<text x="731.50" y="27.00" font-size="3.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">社區樂齡學苑｜住宅區 40%／120%｜老樹為核心・通風與保水改善微氣候</text>
+<text x="8.00" y="586.50" font-size="2.5" fill="#8a8a8a" text-anchor="start" font-weight="normal" opacity="1">106 年 敷地計畫與都市設計 80150｜考場版線稿（可校核）</text>
+<line x1="6.00" y1="6.00" x2="186.00" y2="6.00" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="7.50" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="12.60" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">① 基地硬條件與環境</text>
+<text x="9.00" y="17.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地　40 M × 55 M ＝ 2,200 ㎡〔題目給定〕，略平坦（高差約 0.5 M）</text>
+<text x="9.00" y="20.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">分區　住宅區　建蔽 40%／容積 120%（低容積）</text>
+<text x="9.00" y="24.80" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">臨路　20 M 道路</text>
+<text x="9.00" y="28.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">四鄰　東側國民小學；附近傳統市場（步行可及）</text>
+<text x="9.00" y="32.60" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地內　老樹兩株〔題目給定〕</text>
+<text x="9.00" y="36.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">氣候　夏西南風／冬東北風</text>
+<text x="9.00" y="40.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">水文　舊社區排水老舊、暴雨有淹水紀錄</text>
+<text x="9.00" y="44.30" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">△ 低容積（120%）是本題的機會：可低層化，把地讓給戶外與綠地。</text>
+<text x="9.00" y="48.20" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">⚠ 老樹依各地《樹木保護自治條例》檢討，原地保留為本案選擇。</text>
+<polygon points="31.00,61.10 161.00,61.10 161.00,130.50 31.00,130.50" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.7"/>
+<text x="96.00" y="58.60" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">北 20M 道路</text>
+<text x="96.00" y="135.00" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">舊社區</text>
+<text x="28.50" y="95.80" font-size="2.5" fill="#b8860b" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 28.50 95.80)">傳統市場方向</text>
+<text x="163.50" y="95.80" font-size="2.5" fill="#4a7a3a" text-anchor="middle" font-weight="normal" opacity="1" transform="rotate(-90 163.50 95.80)">東 國小</text>
+<circle cx="111.60" cy="99.27" r="1.60" fill="#4a7a3a" opacity="0.35"/>
+<text x="111.60" y="100.17" font-size="2.3" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">老樹</text>
+<text x="96.00" y="95.80" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">基地</text>
+<g transform="translate(177.00,62.10) rotate(0)"><path d="M0,-4.2 L1.512,1.764 L0,0.42000000000000004 L-1.512,1.764 Z" fill="#1a1a1a"/><text x="0" y="7.800000000000001" font-size="3.4" text-anchor="middle" font-weight="bold">N</text></g>
+<line x1="6.00" y1="151.50" x2="186.00" y2="151.50" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="153.00" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="158.10" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">② 英雄條件・課題與對策</text>
+<text x="9.00" y="162.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">英雄條件：基地內老樹兩株</text>
+<text x="9.00" y="166.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1"></text>
+<text x="9.00" y="170.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 1　微氣候（呼應申論）：熱島、通風不良、缺綠</text>
+<text x="9.00" y="174.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 留西南—東北通風廊道貫穿；增綠覆與遮蔭；</text>
+<text x="9.00" y="178.10" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　 淺色高反射鋪面；水綠（雨花園）降溫</text>
+<text x="9.00" y="182.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 2　老樹兩株易被量體與施工犧牲</text>
+<text x="9.00" y="185.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 建築退讓、不進樹冠投影；樹下設室外家具為戶外核心</text>
+<text x="9.00" y="189.80" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 3　舊社區排水老舊、暴雨淹水</text>
+<text x="9.00" y="193.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 地面層抬高 +0.5 M、透水鋪面、雨花園滯蓄後放流</text>
+<text x="9.00" y="197.60" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　 本案不設地下室（D＝0），從源頭避開淹水風險</text>
+<text x="9.00" y="201.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 4　高齡使用者的安全與便利</text>
+<text x="9.00" y="205.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 單層化動線、近電梯、平緩坡道、防滑、近保健室</text>
+<text x="9.00" y="209.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">課題 5　東側國小接送尖峰與樂齡接送衝突</text>
+<text x="9.00" y="213.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策　 樂齡接送彎設 20 M 道路側，並與國小尖峰時段錯開</text>
+<circle cx="54.92" cy="242.57" r="9.50" fill="#c0392b" opacity="0.22"/>
+<circle cx="54.92" cy="242.57" r="9.50" fill="none" stroke="#c0392b" stroke-width="0.35"/>
+<text x="54.92" y="243.57" font-size="2.7" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">20M 道路</text>
+<line x1="81.92" y1="257.57" x2="54.92" y2="242.57" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="108.92" cy="243.57" r="9.00" fill="#4a7a3a" opacity="0.22"/>
+<circle cx="108.92" cy="243.57" r="9.00" fill="none" stroke="#4a7a3a" stroke-width="0.35"/>
+<text x="108.92" y="244.57" font-size="2.7" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">東側國小</text>
+<line x1="81.92" y1="257.57" x2="108.92" y2="243.57" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="54.92" cy="273.57" r="9.50" fill="#b8860b" opacity="0.22"/>
+<circle cx="54.92" cy="273.57" r="9.50" fill="none" stroke="#b8860b" stroke-width="0.35"/>
+<text x="54.92" y="274.57" font-size="2.7" fill="#b8860b" text-anchor="middle" font-weight="bold" opacity="1">傳統市場</text>
+<line x1="81.92" y1="257.57" x2="54.92" y2="273.57" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="107.92" cy="273.57" r="9.00" fill="#2f6f9f" opacity="0.22"/>
+<circle cx="107.92" cy="273.57" r="9.00" fill="none" stroke="#2f6f9f" stroke-width="0.35"/>
+<text x="107.92" y="274.57" font-size="2.7" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">通風廊道</text>
+<line x1="81.92" y1="257.57" x2="107.92" y2="273.57" stroke="#8a8a8a" stroke-width="0.3"/>
+<circle cx="81.92" cy="257.57" r="13.00" fill="url(#plaza)" opacity="0.6"/>
+<circle cx="81.92" cy="257.57" r="13.00" fill="none" stroke="#b8860b" stroke-width="0.45"/>
+<text x="81.92" y="257.17" font-size="3.0" fill="#8a6a1f" text-anchor="middle" font-weight="bold" opacity="1">老樹客廳</text>
+<text x="81.92" y="260.97" font-size="2.3" fill="#8a6a1f" text-anchor="middle" font-weight="normal" opacity="1">戶外休閒核心</text>
+<text x="8.00" y="292.50" font-size="2.3" fill="#888" text-anchor="start" font-weight="normal" opacity="1">縮圖示意・不代表比例；正圖見中欄配置。</text>
+<line x1="6.00" y1="297.00" x2="186.00" y2="297.00" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="298.50" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="303.60" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">③ 空間需求・量體與開放空間</text>
+<text x="9.00" y="308.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">法規檢核（A/B/G/F/D 五帳）</text>
+<rect x="9.00" y="313.90" width="174.00" height="5.00" fill="#e8ecf0" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="12.48" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">項目</text>
+<text x="85.56" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">法定</text>
+<text x="130.80" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">本案</text>
+<text x="172.56" y="317.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1"></text>
+<rect x="9.00" y="318.90" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="322.30" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地 A</text>
+<text x="85.56" y="322.30" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">—</text>
+<text x="130.80" y="322.30" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">2,200 ㎡</text>
+<text x="172.56" y="322.30" font-size="2.9" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">—</text>
+<rect x="9.00" y="323.70" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="327.10" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">建蔽率</text>
+<text x="85.56" y="327.10" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">40%</text>
+<text x="130.80" y="327.10" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">29.5%</text>
+<text x="172.56" y="327.10" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="328.50" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="331.90" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">建築面積 B</text>
+<text x="85.56" y="331.90" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">≤880 ㎡</text>
+<text x="130.80" y="331.90" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">648 ㎡</text>
+<text x="172.56" y="331.90" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="333.30" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="336.70" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">容積率</text>
+<text x="85.56" y="336.70" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">120%</text>
+<text x="130.80" y="336.70" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">58.9%</text>
+<text x="172.56" y="336.70" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="338.10" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="341.50" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">計容積 F</text>
+<text x="85.56" y="341.50" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">≤2,640 ㎡</text>
+<text x="130.80" y="341.50" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">1,296 ㎡</text>
+<text x="172.56" y="341.50" font-size="2.9" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">✓</text>
+<rect x="9.00" y="342.90" width="174.00" height="4.80" fill="#fff" stroke="#e8e6e2" stroke-width="0.2"/>
+<text x="12.48" y="346.30" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">開挖率 D/A</text>
+<text x="85.56" y="346.30" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">未給上限</text>
+<text x="130.80" y="346.30" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">0%（不設地下室）</text>
+<text x="172.56" y="346.30" font-size="2.9" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">—</text>
+<text x="9.00" y="349.70" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">主棟（教室・活動・共餐）480 ㎡ × 2F ＝ 960 ㎡</text>
+<text x="9.00" y="353.60" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">保健・行政・諮詢 168 ㎡ × 2F ＝ 336 ㎡</text>
+<text x="9.00" y="357.50" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">⚠ 空間項目面積題目未逐項給定 → 全部標為自訂方案。</text>
+<text x="9.00" y="361.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">戶外：老樹客廳約 600 ㎡、雨花園約 120 ㎡〔方案〕</text>
+<text x="9.00" y="365.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">容積只用 58.9%——低層化換取戶外活動與綠地，正面回應微氣候。</text>
+<polygon points="60.80,411.78 82.80,411.78 95.80,405.28 73.80,405.28" fill="#d6e6f2" stroke="#1a1a1a" stroke-width="0.4"/>
+<rect x="60.80" y="411.78" width="22.00" height="12.00" fill="#d6e6f2" stroke="#1a1a1a" stroke-width="0.4"/>
+<polygon points="82.80,411.78 95.80,405.28 95.80,417.28 82.80,423.78" fill="#00000012" stroke="#1a1a1a" stroke-width="0.4"/>
+<text x="97.80" y="420.18" font-size="2.5" fill="#444" text-anchor="start" font-weight="normal" opacity="1">保健・行政 2F（336 ㎡）</text>
+<polygon points="60.80,395.78 94.80,395.78 107.80,389.28 73.80,389.28" fill="#e6dced" stroke="#1a1a1a" stroke-width="0.4"/>
+<rect x="60.80" y="395.78" width="34.00" height="14.00" fill="#e6dced" stroke="#1a1a1a" stroke-width="0.4"/>
+<polygon points="94.80,395.78 107.80,389.28 107.80,403.28 94.80,409.78" fill="#00000012" stroke="#1a1a1a" stroke-width="0.4"/>
+<text x="109.80" y="405.58" font-size="2.5" fill="#444" text-anchor="start" font-weight="normal" opacity="1">主棟 2F（960 ㎡）</text>
+<line x1="6.00" y1="442.50" x2="186.00" y2="442.50" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="7.50" y="444.00" width="177.00" height="7.00" fill="#2c3e50"/>
+<text x="9.50" y="449.10" font-size="4.0" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">④ 人車動線・防災與管理</text>
+<text x="9.00" y="453.50" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">人行　主入口設北側 20 M 道路；西側次入口接傳統市場日常人流。</text>
+<text x="9.00" y="457.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">接送　樂齡接送彎在 20 M 道路側，與東側國小尖峰時段錯開。</text>
+<text x="9.00" y="461.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">無障礙　全程平緩坡道、防滑鋪面、近電梯與保健室。</text>
+<text x="9.00" y="465.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">停車　題目未指定車位數 → 圖上明寫未指定；地面設接送與自行車位。</text>
+<text x="9.00" y="469.10" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">防災　老樹客廳為無建物地震臨時避難集合場。</text>
+<text x="9.00" y="473.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">防洪　地面層抬高 +0.5 M；雨花園滯蓄後放流；不設地下室。</text>
+<text x="9.00" y="476.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">微氣候　通風廊道貫穿、複層綠覆遮蔭、淺色高反射鋪面。</text>
+<text x="9.00" y="480.80" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">管理　共餐與活動可分時段；保健諮詢可獨立開放。</text>
+<polygon points="32.00,488.70 160.00,488.70 160.00,558.00 32.00,558.00" fill="#fafaf8" stroke="#1a1a1a" stroke-width="0.6"/>
+<rect x="42.24" y="492.86" width="76.80" height="18.02" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="80.64" y="502.87" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">主棟</text>
+<rect x="42.24" y="516.42" width="35.84" height="13.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="60.16" y="524.35" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">保健行政</text>
+<polygon points="85.76,513.65 152.32,513.65 152.32,552.46 85.76,552.46" fill="url(#tree)" opacity="0.55" stroke="#4a7a3a" stroke-width="0.3"/>
+<text x="119.04" y="531.67" font-size="2.5" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">老樹客廳</text>
+<path d="M 90.9 477.7 L 90.9 487.2" stroke="#c0392b" stroke-width="1.1" fill="none" color="#c0392b" marker-end="url(#ar2)"/>
+<text x="90.88" y="476.20" font-size="2.25" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">主入口（北 20M）</text>
+<path d="M 21.0 524.7 L 30.5 524.7" stroke="#b8860b" stroke-width="1.1" fill="none" color="#b8860b" marker-end="url(#ar2)"/>
+<text x="9.00" y="522.74" font-size="2.25" fill="#b8860b" text-anchor="start" font-weight="normal" opacity="1">次入口（接市場）</text>
+<path d="M 171.0 506.7 L 158.7 506.7" stroke="#4a7a3a" stroke-width="1.1" fill="none" color="#4a7a3a" marker-end="url(#ar2)"/>
+<text x="183.00" y="504.72" font-size="2.25" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">與國小錯開時段</text>
+<line x1="10.00" y1="574.00" x2="16.00" y2="574.00" stroke="#c0392b" stroke-width="1.1"/>
+<text x="18.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">人行</text>
+<line x1="50.00" y1="574.00" x2="56.00" y2="574.00" stroke="#b8860b" stroke-width="1.1"/>
+<text x="58.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">次入口</text>
+<line x1="90.00" y1="574.00" x2="96.00" y2="574.00" stroke="#4a7a3a" stroke-width="1.1"/>
+<text x="98.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">戶外</text>
+<line x1="130.00" y1="574.00" x2="136.00" y2="574.00" stroke="#2f6f9f" stroke-width="1.1"/>
+<text x="138.00" y="575.10" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" opacity="1">風</text>
+<text x="10.00" y="579.60" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">低層量體收在西北兩側，東南整片留給老樹與戶外；夏西南風可由對角貫穿。</text>
+<rect x="205.57" y="87.29" width="402.86" height="42.86" fill="#e8e6e2"/>
+<text x="398.43" y="110.86" font-size="3.2" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">北側 20 M 道路（主要臨路）</text>
+<rect x="214.14" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="252.71" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="291.29" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="329.86" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="368.43" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="407.00" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="445.57" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="484.14" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="522.71" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="561.29" y="35.86" width="30.00" height="42.86" fill="#ece9e3" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="398.43" y="27.29" font-size="3.0" fill="#555" text-anchor="middle" font-weight="bold" opacity="1">對側舊社區（低層・排水系統老舊）</text>
+<rect x="454.14" y="121.57" width="132.86" height="143.57" fill="#eef1ea" stroke="#4a7a3a" stroke-width="0.45"/>
+<rect x="467.00" y="147.29" width="19.29" height="55.71" fill="#e2e8dc" stroke="#4a7a3a" stroke-width="0.3"/>
+<rect x="494.86" y="147.29" width="19.29" height="55.71" fill="#e2e8dc" stroke="#4a7a3a" stroke-width="0.3"/>
+<rect x="522.71" y="147.29" width="19.29" height="55.71" fill="#e2e8dc" stroke="#4a7a3a" stroke-width="0.3"/>
+<rect x="550.57" y="147.29" width="19.29" height="55.71" fill="#e2e8dc" stroke="#4a7a3a" stroke-width="0.3"/>
+<text x="520.57" y="113.00" font-size="3.2" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">東側 國民小學（基地外）</text>
+<text x="520.57" y="273.71" font-size="2.7" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">接送尖峰時段與樂齡錯開</text>
+<rect x="252.71" y="155.86" width="64.29" height="55.71" fill="#f5ece0" stroke="#b8860b" stroke-width="0.45"/>
+<text x="284.86" y="179.43" font-size="3.2" fill="#8a6a1f" text-anchor="middle" font-weight="bold" opacity="1">附近傳統市場</text>
+<text x="284.86" y="190.14" font-size="2.6" fill="#8a6a1f" text-anchor="middle" font-weight="normal" opacity="1">（步行可及・日常人流）</text>
+<path d="M 317.0 267.3 L 347.0 233.0" stroke="#2f6f9f" stroke-width="1.2" fill="none" color="#2f6f9f" marker-end="url(#ar2)"/>
+<text x="321.29" y="275.86" font-size="2.9" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">夏 西南風</text>
+<path d="M 479.9 95.9 L 449.9 121.6" stroke="#8a6a1f" stroke-width="1.2" fill="none" color="#8a6a1f" marker-end="url(#ar2)"/>
+<text x="484.14" y="91.57" font-size="2.9" fill="#8a6a1f" text-anchor="middle" font-weight="bold" opacity="1">冬 東北風</text>
+<polygon points="355.57,130.14 441.29,130.14 441.29,248.00 355.57,248.00" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.95"/>
+<text x="355.57" y="77.64" font-size="3.2" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">基地界線　40 M × 55 M ＝ 2,200 ㎡（住宅區）</text>
+<text x="355.57" y="68.00" font-size="2.7" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">A＝2,200 ㎡〔題目給定〕　建蔽 40%／容積 120%（低容積 → 可低層化、多留戶外）</text>
+<polygon points="355.57,215.86 377.00,194.43 441.29,147.29 441.29,168.71 385.57,211.57 368.43,228.71" fill="#eaf2f8" opacity="0.8" stroke="#2f6f9f" stroke-width="0.4" stroke-dasharray="3 2"/>
+<text x="402.71" y="190.14" font-size="2.8" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1" transform="rotate(-36 402.71 190.14)">通風廊道（夏西南風貫穿，帶走熱）</text>
+<circle cx="409.14" cy="196.57" r="15.00" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="409.14" cy="196.57" r="1.93" fill="#6f9b5c"/>
+<text x="409.14" y="216.71" font-size="2.7" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">老樹 ①</text>
+<circle cx="419.86" cy="222.29" r="15.00" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="419.86" cy="222.29" r="1.93" fill="#6f9b5c"/>
+<text x="419.86" y="242.43" font-size="2.7" fill="#4a7a3a" text-anchor="middle" font-weight="bold" opacity="1">老樹 ②</text>
+<polygon points="394.14,177.29 437.00,177.29 437.00,241.57 394.14,241.57" fill="url(#plaza)" opacity="0.35" stroke="#b8860b" stroke-width="0.4"/>
+<text x="415.57" y="183.71" font-size="3.4" fill="#8a6a1f" text-anchor="middle" font-weight="bold" opacity="1">老樹客廳・戶外休閒核心</text>
+<text x="415.57" y="237.29" font-size="2.6" fill="#8a6a1f" text-anchor="middle" font-weight="normal" opacity="1">樹下遮蔭・室外家具・地震臨時避難集合</text>
+<text x="415.57" y="246.29" font-size="2.5" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">建築退讓、不進樹冠投影範圍</text>
+<ellipse cx="377.00" cy="228.71" rx="15.00" ry="11.79" fill="url(#water)" stroke="#2f6f9f" stroke-width="0.5"/>
+<text x="377.00" y="228.71" font-size="2.8" fill="#2f6f9f" text-anchor="middle" font-weight="bold" opacity="1">雨花園</text>
+<text x="377.00" y="244.79" font-size="2.4" fill="#2f6f9f" text-anchor="middle" font-weight="normal" opacity="1">滯蓄後放流・透水鋪面</text>
+<rect x="364.14" y="138.71" width="64.29" height="34.29" fill="#e6dced" stroke="#1a1a1a" stroke-width="0.75"/>
+<text x="396.29" y="154.46" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">樂齡學苑主棟（教室・活動・共餐）</text>
+<text x="396.29" y="158.46" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">960 ㎡ / 2F</text>
+<rect x="364.14" y="181.57" width="30.00" height="25.71" fill="#d6e6f2" stroke="#1a1a1a" stroke-width="0.75"/>
+<text x="379.14" y="193.03" font-size="3.4" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">保健・行政・諮詢</text>
+<text x="379.14" y="197.03" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">336 ㎡ / 2F</text>
+<text x="396.29" y="160.14" font-size="2.5" fill="#666" text-anchor="middle" font-weight="normal" opacity="1">單層化動線・近電梯・平緩坡道・防滑・近保健室</text>
+<polygon points="368.43,122.64 411.29,122.64 411.29,113.00 368.43,113.00" fill="#fff" stroke="#c0392b" stroke-width="0.5" stroke-dasharray="2 1.4"/>
+<text x="389.86" y="118.57" font-size="2.5" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">樂齡接送彎（20 M 道路側・避開國小尖峰）</text>
+<line x1="396.29" y1="130.14" x2="416.29" y2="124.14" stroke="#c0392b" stroke-width="0.25"/>
+<circle cx="396.29" cy="130.14" r="0.55" fill="#c0392b"/>
+<text x="417.49" y="125.04" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">主入口－北側 20 M 道路，近接送彎</text>
+<line x1="355.57" y1="194.43" x2="335.57" y2="188.43" stroke="#b8860b" stroke-width="0.25"/>
+<circle cx="355.57" cy="194.43" r="0.55" fill="#b8860b"/>
+<text x="334.37" y="189.33" font-size="2.6" fill="#b8860b" text-anchor="end" font-weight="bold" opacity="1">社區次入口－西側，接傳統市場日常人流</text>
+<line x1="364.14" y1="168.71" x2="384.14" y2="162.71" stroke="#4a7a3a" stroke-width="0.25"/>
+<circle cx="364.14" cy="168.71" r="0.55" fill="#4a7a3a"/>
+<text x="385.34" y="163.61" font-size="2.6" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">老樹客廳入口－全程無障礙、平緩坡道</text>
+<rect x="252.71" y="228.71" width="64.29" height="30.00" fill="#fbeaea" stroke="#c0392b" stroke-width="0.45"/>
+<text x="284.86" y="237.29" font-size="2.6" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">地下開挖範圍：本案不設地下室</text>
+<text x="284.86" y="245.86" font-size="2.6" fill="#c0392b" text-anchor="middle" font-weight="bold" opacity="1">D＝0 ㎡　開挖率 D/A＝0%</text>
+<text x="284.86" y="254.43" font-size="2.3" fill="#c0392b" text-anchor="middle" font-weight="normal" opacity="1">理由：暴雨淹水潛勢＋容積僅用 58.9%</text>
+<line x1="235.57" y1="194.43" x2="595.57" y2="194.43" stroke="#1a1a1a" stroke-width="0.55" stroke-dasharray="5 1.8 1.4 1.8"/>
+<text x="227.00" y="196.57" font-size="4.2" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">A</text>
+<text x="604.14" y="196.57" font-size="4.2" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">A'</text>
+<line x1="396.29" y1="31.57" x2="396.29" y2="280.14" stroke="#1a1a1a" stroke-width="0.55" stroke-dasharray="5 1.8 1.4 1.8"/>
+<text x="396.29" y="23.00" font-size="4.2" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">B</text>
+<text x="396.29" y="288.71" font-size="4.2" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">B'</text>
+<g transform="translate(578.43,35.86) rotate(0)"><path d="M0,-5 L1.7999999999999998,2.1 L0,0.5 L-1.7999999999999998,2.1 Z" fill="#1a1a1a"/><text x="0" y="8.6" font-size="3.4" text-anchor="middle" font-weight="bold">N</text></g>
+<text x="196.00" y="302.00" font-size="6.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">全區配置與地面層景觀</text>
+<rect x="514.00" y="290.00" width="21.43" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="535.43" y="290.00" width="21.43" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="556.86" y="290.00" width="21.43" height="1.40" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.2"/>
+<rect x="578.29" y="290.00" width="21.43" height="1.40" fill="#fff" stroke="#1a1a1a" stroke-width="0.2"/>
+<text x="514.00" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">0</text>
+<text x="535.43" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">10</text>
+<text x="556.86" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">20</text>
+<text x="578.29" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">30</text>
+<text x="599.71" y="294.20" font-size="2.4" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">40</text>
+<text x="556.86" y="298.00" font-size="2.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" opacity="1">公尺　S＝1 : 470</text>
+<line x1="194.00" y1="311.00" x2="620.00" y2="311.00" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="196.00" y="319.40" font-size="4.4" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">A-A' 剖立面（東西向・證明通風廊道與老樹保留）</text>
+<line x1="197.00" y1="340.00" x2="197.00" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="245.46" y="342.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">傳統市場方向 24M</text>
+<line x1="293.92" y1="340.00" x2="293.92" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="302.00" y="342.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">西側退讓 4M</text>
+<line x1="310.08" y1="340.00" x2="310.08" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="338.35" y="342.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">保健・行政 14M</text>
+<line x1="366.62" y1="340.00" x2="366.62" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="407.00" y="342.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">老樹客廳 20M</text>
+<line x1="447.38" y1="340.00" x2="447.38" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="451.42" y="342.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">東側退讓 2M</text>
+<line x1="455.46" y1="340.00" x2="455.46" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="536.23" y="342.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">東 國小 40M</text>
+<line x1="197.00" y1="343.40" x2="617.00" y2="343.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="197.00" y="351.00" width="96.92" height="14.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="245.46" y="349.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">舊社區低層</text>
+<rect x="455.46" y="349.00" width="161.54" height="16.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="536.23" y="347.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">國小校舍</text>
+<line x1="197.00" y1="365.00" x2="617.00" y2="365.00" stroke="#1a1a1a" stroke-width="0.8"/>
+<rect x="310.08" y="359.00" width="56.54" height="6.00" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="311.48" y="363.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
+<rect x="310.08" y="353.00" width="56.54" height="6.00" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="311.48" y="357.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">2F</text>
+<text x="338.35" y="350.60" font-size="3.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">保健・行政 2F</text>
+<text x="367.52" y="355.60" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">2F</text>
+<text x="197.00" y="375.50" font-size="2.35" fill="#555" text-anchor="start" font-weight="normal" opacity="1">1F 4.2 M／2F 3.6 M，地面層抬高 +0.5 M。老樹樹冠高於量體，建築退出樹冠投影，風由西南穿越不被擋。</text>
+<text x="196.00" y="389.40" font-size="4.4" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">B-B' 剖立面（南北向・證明低層化與防淹）</text>
+<line x1="197.00" y1="412.00" x2="197.00" y2="415.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="243.67" y="414.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">北 20M 道路 20M</text>
+<line x1="290.33" y1="412.00" x2="290.33" y2="415.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="327.67" y="414.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">主棟 16M</text>
+<line x1="365.00" y1="412.00" x2="365.00" y2="415.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="435.00" y="414.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">老樹客廳 30M</text>
+<line x1="505.00" y1="412.00" x2="505.00" y2="415.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="561.00" y="414.60" font-size="2.25" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">南側舊社區 24M</text>
+<line x1="197.00" y1="415.40" x2="617.00" y2="415.40" stroke="#8a8a8a" stroke-width="0.25"/>
+<rect x="197.00" y="421.00" width="93.33" height="12.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="243.67" y="419.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">對側舊社區</text>
+<rect x="505.00" y="421.00" width="112.00" height="12.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="561.00" y="419.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">舊社區</text>
+<line x1="197.00" y1="433.00" x2="617.00" y2="433.00" stroke="#1a1a1a" stroke-width="0.8"/>
+<rect x="290.33" y="427.00" width="74.67" height="6.00" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="291.73" y="431.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
+<rect x="290.33" y="421.00" width="74.67" height="6.00" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
+<text x="291.73" y="425.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">2F</text>
+<text x="327.67" y="418.60" font-size="3.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">樂齡學苑主棟 2F</text>
+<text x="365.90" y="423.60" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">2F</text>
+<text x="197.00" y="443.50" font-size="2.35" fill="#555" text-anchor="start" font-weight="normal" opacity="1">本案僅 2 層，與周邊低矮舊社區同尺度；地面層抬高 +0.5 M 並設防水閘，不設地下室，淹水風險由源頭消除。</text>
+<text x="196.00" y="456.00" font-size="5.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">局部透視　老樹客廳（午後活動時段）</text>
+<rect x="194.00" y="460.00" width="426.00" height="110.00" fill="#fff" stroke="#8a8a8a" stroke-width="0.35"/>
+<line x1="198.00" y1="554.00" x2="616.00" y2="554.00" stroke="#1a1a1a" stroke-width="0.5"/>
+<rect x="198.00" y="530.00" width="117.04" height="24.00" fill="#f1eef6" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="256.52" y="528.20" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">樂齡學苑主棟 2F</text>
+<rect x="582.56" y="544.00" width="33.44" height="10.00" fill="#f1eef6" stroke="#1a1a1a" stroke-width="0.5"/>
+<text x="599.28" y="542.20" font-size="2.6" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">東側國小</text>
+<line x1="373.56" y1="554.00" x2="373.56" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="373.56" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<line x1="440.44" y1="554.00" x2="440.44" y2="547.00" stroke="#6f9b5c" stroke-width="0.5"/>
+<circle cx="440.44" cy="543.50" r="4.20" fill="url(#tree)" stroke="#6f9b5c" stroke-width="0.25"/>
+<circle cx="340.12" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="340.12" y1="549.40" x2="340.12" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="338.82" y1="554.00" x2="340.12" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="341.42" y1="554.00" x2="340.12" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="361.02" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="361.02" y1="549.40" x2="361.02" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="359.72" y1="554.00" x2="361.02" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="362.32" y1="554.00" x2="361.02" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="390.28" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="390.28" y1="549.40" x2="390.28" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="388.98" y1="554.00" x2="390.28" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="391.58" y1="554.00" x2="390.28" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="415.36" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="415.36" y1="549.40" x2="415.36" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="414.06" y1="554.00" x2="415.36" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="416.66" y1="554.00" x2="415.36" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="448.80" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="448.80" y1="549.40" x2="448.80" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="447.50" y1="554.00" x2="448.80" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="450.10" y1="554.00" x2="448.80" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="482.24" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="482.24" y1="549.40" x2="482.24" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="480.94" y1="554.00" x2="482.24" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="483.54" y1="554.00" x2="482.24" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<circle cx="507.32" cy="548.60" r="0.85" fill="#1a1a1a"/>
+<line x1="507.32" y1="549.40" x2="507.32" y2="552.40" stroke="#1a1a1a" stroke-width="0.55"/>
+<line x1="506.02" y1="554.00" x2="507.32" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<line x1="508.62" y1="554.00" x2="507.32" y2="552.40" stroke="#1a1a1a" stroke-width="0.45"/>
+<path d="M 524.0 558.0 q 6,-2.4 12,0 t 12,0 t 12,0 t 12,0 t 12,0" fill="none" stroke="#2f6f9f" stroke-width="0.5"/>
+<text x="574.20" y="556.00" font-size="2.4" fill="#2f6f9f" text-anchor="end" font-weight="normal" opacity="1">雨花園</text>
+<text x="196.00" y="573.40" font-size="2.6" fill="#444" text-anchor="start" font-weight="normal" opacity="1">兩株老樹的樹冠就是屋頂：樹下擺室外家具，遮蔭與座椅同時解決微氣候與高齡的需求。</text>
+<text x="196.00" y="577.40" font-size="2.6" fill="#444" text-anchor="start" font-weight="normal" opacity="1">量體只有 2 層、容積只用 58.9%——把地留下來，正是本題「微氣候」與「樂齡」的共同答案。</text>
+<rect x="630.00" y="38.00" width="203.00" height="8.00" fill="#2c3e50"/>
+<text x="633.00" y="43.80" font-size="4.2" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">申論題（30 分）</text>
+<text x="632.00" y="50.00" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" opacity="1">①說明都市微氣候之形成原因、忽視微氣候所造成之負面</text>
+<text x="632.00" y="54.00" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" opacity="1">影響，以及都市設計可採行之對策。②說明如何以都市</text>
+<text x="632.00" y="58.00" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" opacity="1">設計手法保存空間形式與舊有之都市記憶。</text>
+<text x="632.00" y="65.00" font-size="3.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">（一）微氣候：成因→影響→對策</text>
+<rect x="632.00" y="70.50" width="16.00" height="9.50" fill="#eef2f6" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="640.00" y="76.50" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">成因</text>
+<text x="650.00" y="74.50" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">高蓄熱材料、人工發熱、綠地不足</text>
+<text x="650.00" y="78.50" font-size="2.35" fill="#777" text-anchor="start" font-weight="normal" opacity="1">加上風場紊亂與日照遮蔽</text>
+<rect x="632.00" y="81.00" width="16.00" height="9.50" fill="#eef2f6" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="640.00" y="87.00" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">影響</text>
+<text x="650.00" y="85.00" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">熱島、能耗上升、污染累積、風害</text>
+<text x="650.00" y="89.00" font-size="2.35" fill="#777" text-anchor="start" font-weight="normal" opacity="1">缺綠使生態與保水下降</text>
+<rect x="632.00" y="91.50" width="16.00" height="9.50" fill="#eef2f6" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="640.00" y="97.50" font-size="2.9" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">對策</text>
+<text x="650.00" y="95.50" font-size="2.5" fill="#333" text-anchor="start" font-weight="normal" opacity="1">通風廊道、增綠覆與透水、遮蔭</text>
+<text x="650.00" y="99.50" font-size="2.35" fill="#777" text-anchor="start" font-weight="normal" opacity="1">退縮與棟距、淺色高反射</text>
+<text x="632.00" y="104.00" font-size="3.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">（二）保存空間形式與都市記憶</text>
+<text x="632.00" y="110.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">1. 紋理與街廓尺度延續：新量體不打斷既有的街道節奏。</text>
+<text x="632.00" y="115.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">2. 視覺廊道與對景：讓記憶中的地標仍然看得見。</text>
+<text x="632.00" y="119.10" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">3. 新舊量體對話：以高度遞降與材料呼應，而非模仿。</text>
+<text x="632.00" y="123.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">4. 場所精神再現：保留老樹、水圳、地名與事件的詮釋。</text>
+<text x="632.00" y="127.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">5. 活化再利用：讓舊空間仍在被使用，記憶才不會變標本。</text>
+<rect x="632.00" y="131.00" width="199.00" height="12.40" fill="#eef5ea" stroke="#4a7a3a" stroke-width="0.3"/>
+<text x="634.00" y="135.60" font-size="2.5" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">本案的記憶載體就是那兩株老樹——保留它，</text>
+<text x="634.00" y="139.60" font-size="2.5" fill="#4a7a3a" text-anchor="start" font-weight="bold" opacity="1">等於同時回答了微氣候與都市記憶兩題。</text>
+<text x="632.00" y="147.40" font-size="3.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">（三）小結</text>
+<text x="632.00" y="154.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">微氣候靠藍綠與通風，記憶靠紋理與場所精神；</text>
+<text x="632.00" y="158.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">兩者都不是文字，都必須落在敷地配置上才算數。</text>
+<rect x="630.00" y="165.10" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="170.50" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">本年官方圖說要求｜逐項打勾</text>
+<rect x="632.00" y="174.60" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="178.40" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">規劃理念與全區配置</text>
+<text x="634.50" y="182.00" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">通風廊道、老樹保留、雨花園、接送彎皆在圖上</text>
+<text x="827.00" y="180.40" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="184.20" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="188.00" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">機能關係圖</text>
+<text x="634.50" y="191.60" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">主棟／保健行政／老樹客廳之關係與無障礙動線</text>
+<text x="827.00" y="190.00" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="193.80" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="197.60" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">剖立面</text>
+<text x="634.50" y="201.20" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">A-A' 通風與老樹／B-B' 低層化與防淹抬高</text>
+<text x="827.00" y="199.60" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="203.40" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.50" y="207.20" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">透視 ≥1</text>
+<text x="634.50" y="210.80" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">老樹客廳午後活動，含人物與尺度</text>
+<text x="827.00" y="209.20" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
+<rect x="632.00" y="216.00" width="199.00" height="24.00" fill="#fdf7e8" stroke="#b8860b" stroke-width="0.35"/>
+<text x="634.50" y="220.60" font-size="3.0" fill="#8a6a1f" text-anchor="start" font-weight="bold" opacity="1">數值證據分級（本張圖）</text>
+<text x="634.50" y="225.60" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">題目給定：40×55＝2,200 ㎡、40%／120%、老樹兩株、20 M 道路、夏西南/冬東北</text>
+<text x="634.50" y="229.80" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">圖推概算：老樹位置與冠幅依題圖示意（未標尺寸）</text>
+<text x="634.50" y="234.00" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">自訂方案：量體尺寸、樓層、抬高 0.5 M、雨花園、通風廊道寬度、不設地下室</text>
+<text x="634.50" y="238.20" font-size="2.35" fill="#6b5a2a" text-anchor="start" font-weight="normal" opacity="1">題目未指定：空間項目面積、停車位數、高度上限 → 圖上明寫未指定</text>
+<rect x="632.00" y="244.20" width="199.00" height="13.50" fill="#fbeaea" stroke="#c0392b" stroke-width="0.35"/>
+<text x="634.50" y="248.80" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">交卷前：圖名・比例尺・指北・剖面樓高數字、</text>
+<text x="634.50" y="252.60" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">透視有人物、每條算式數字與圖上一致、</text>
+<text x="634.50" y="256.40" font-size="2.6" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">題目點名條件逐條指得出位置。</text>
+<rect x="630.00" y="261.20" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="266.60" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">法規檢核｜法源→本案落點</text>
+<rect x="632.00" y="270.70" width="199.00" height="6.00" fill="#e8ecf0" stroke="#8a8a8a" stroke-width="0.25"/>
+<text x="634.00" y="274.90" font-size="2.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">法源（簡稱）</text>
+<text x="686.00" y="274.90" font-size="2.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">要求</text>
+<text x="758.00" y="274.90" font-size="2.6" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">本案落點</text>
+<rect x="632.00" y="276.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="281.60" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 綠建築基準</text>
+<text x="686.00" y="281.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">通風、綠化、基地保水改善微氣候</text>
+<text x="758.00" y="281.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">通風廊道＋複層綠覆＋透水鋪面</text>
+<rect x="632.00" y="283.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="288.80" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §302</text>
+<text x="686.00" y="288.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">建築基地綠化量</text>
+<text x="758.00" y="288.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">老樹保留＋複層植栽，一樓留土植穴</text>
+<rect x="632.00" y="291.10" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="296.00" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §305</text>
+<text x="686.00" y="296.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地保水</text>
+<text x="758.00" y="296.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">透水鋪面＋雨花園為保水設施</text>
+<rect x="632.00" y="298.30" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="303.20" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §4-3</text>
+<text x="686.00" y="303.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">雨水貯集：基地面積×0.045 m³/㎡</text>
+<text x="758.00" y="303.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">2,200×0.045＝99 m³</text>
+<rect x="632.00" y="305.50" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="310.40" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §39-1</text>
+<text x="686.00" y="310.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">日照：不使鄰地冬至日照&lt;1hr</text>
+<text x="758.00" y="310.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">僅 2 層、退讓充足，無遮蔽疑慮</text>
+<rect x="632.00" y="312.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="317.60" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">老人福利法・精神</text>
+<text x="686.00" y="317.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">高齡友善與長者照顧</text>
+<text x="758.00" y="317.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">近保健室、平緩坡道、共餐共學</text>
+<rect x="632.00" y="319.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="324.80" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">無障礙設計規範</text>
+<text x="686.00" y="324.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">全程無障礙、防滑</text>
+<text x="758.00" y="324.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">入口無高差、坡度依規範</text>
+<rect x="632.00" y="327.10" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="332.00" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">樹木保護自治條例</text>
+<text x="686.00" y="332.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">受保護樹木原地保留</text>
+<text x="758.00" y="332.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">老樹兩株依地方條例檢討</text>
+<text x="632.00" y="337.90" font-size="2.4" fill="#888" text-anchor="start" font-weight="normal" opacity="1">※ 條號僅供本庫查核；考場圖上寫簡稱即可，不背條號。</text>
+<rect x="630.00" y="343.30" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="348.70" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">課題→對策→效益（三行原則）</text>
+<rect x="632.00" y="352.80" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="357.00" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜微氣候是申論主題，圖上必須看得見</text>
+<text x="634.00" y="360.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜留西南—東北通風廊道貫穿基地，量體收在西北，東南整片留綠</text>
+<text x="634.00" y="364.40" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜申論講的每一項對策，在配置圖上都指得出位置</text>
+<rect x="632.00" y="366.20" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="370.40" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜老樹兩株容易在配置與施工中犧牲</text>
+<text x="634.00" y="374.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜建築退出樹冠投影範圍，樹下設室外家具為戶外核心，不設地下室</text>
+<text x="634.00" y="377.80" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜老樹從限制變成本案的主角與記憶載體</text>
+<rect x="632.00" y="379.60" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="383.80" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜舊社區排水老舊、暴雨會淹</text>
+<text x="634.00" y="387.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜地面層抬高 +0.5 M、透水鋪面、雨花園滯蓄後放流，並不設地下室</text>
+<text x="634.00" y="391.20" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜從源頭避開風險，而不是事後加抽水機</text>
+<rect x="632.00" y="393.00" width="199.00" height="12.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.22"/>
+<text x="634.00" y="397.20" font-size="2.5" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">課題｜高齡使用者的安全與便利</text>
+<text x="634.00" y="401.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">對策｜單層化動線、近電梯、平緩坡道、防滑鋪面、保健室鄰近活動區</text>
+<text x="634.00" y="404.60" font-size="2.4" fill="#4a7a3a" text-anchor="start" font-weight="normal" opacity="1">效益｜樂齡不是加幾支扶手，是整條動線的設計</text>
+<rect x="630.00" y="409.40" width="203.00" height="7.50" fill="#2c3e50"/>
+<text x="633.00" y="414.80" font-size="3.6" fill="#fff" text-anchor="start" font-weight="bold" opacity="1">基地核對｜與官方底圖疊合</text>
+<rect x="632.00" y="418.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="423.80" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">道路</text>
+<text x="650.00" y="423.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">北側 20 M 道路</text>
+<text x="827.00" y="423.80" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 未新增、未拓寬</text>
+<rect x="632.00" y="426.10" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="431.00" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">國小</text>
+<text x="650.00" y="431.00" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">東側，基地外</text>
+<text x="827.00" y="431.00" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 位置未移，接送時段錯開</text>
+<rect x="632.00" y="433.30" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="438.20" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">市場</text>
+<text x="650.00" y="438.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">附近，步行可及</text>
+<text x="827.00" y="438.20" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 以次入口銜接，未虛構距離</text>
+<rect x="632.00" y="440.50" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="445.40" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">老樹</text>
+<text x="650.00" y="445.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地內兩株</text>
+<text x="827.00" y="445.40" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 原地保留，建築退出樹冠投影</text>
+<rect x="632.00" y="447.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="452.60" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">地形</text>
+<text x="650.00" y="452.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">略平坦，高差約 0.5 M</text>
+<text x="827.00" y="452.60" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 未虛構坡地</text>
+<rect x="632.00" y="454.90" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
+<text x="634.00" y="459.80" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">界線</text>
+<text x="650.00" y="459.80" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">矩形 40×55，無凹口</text>
+<text x="827.00" y="459.80" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 量體全在界內，不設地下室</text>
+<rect x="632.00" y="466.10" width="199.00" height="46.60" fill="#f4f6f8" stroke="#8a8a8a" stroke-width="0.3"/>
+<text x="634.50" y="470.90" font-size="3.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">量體計算式（逐行可校核）</text>
+<text x="634.50" y="476.30" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">A ＝ 40 × 55 ＝ 2,200 ㎡〔題目給定〕</text>
+<text x="634.50" y="480.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B上限 ＝ A×40% ＝ 880 ㎡　F上限 ＝ A×120% ＝ 2,640 ㎡（低容積）</text>
+<text x="634.50" y="485.10" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">投影 B ＝ 主棟 480＋保健行政 168 ＝ 648 ㎡　建蔽 ＝ 29.5% ≦ 40% ✓</text>
+<text x="634.50" y="489.50" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">G ＝ 480×2F＋168×2F ＝ 960＋336 ＝ 1,296 ㎡　容積率 ＝ 58.9% ≦ 120% ✓</text>
+<text x="634.50" y="493.90" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">容積用量 ＝ 1,296 / 2,640 ＝ 49.1%（刻意低層化，換取戶外與綠地）</text>
+<text x="634.50" y="498.30" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">開挖 D ＝ 0 ㎡　開挖率 ＝ 0%（本案不設地下室：淹水潛勢＋容積用量低）</text>
+<text x="634.50" y="502.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">雨水貯集 ＝ 2,200 × 0.045 ＝ 99 m³（技則 §4-3）</text>
+<text x="634.50" y="507.10" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">戶外：老樹客廳 約 600 ㎡＋雨花園 約 120 ㎡〔方案〕</text>
+<text x="632.00" y="585.00" font-size="2.4" fill="#999" text-anchor="start" font-weight="normal" opacity="1">106 年 社區樂齡學苑｜80150 敷地計畫與都市設計｜考場復原稿（可校核線稿）</text>
+</svg>
