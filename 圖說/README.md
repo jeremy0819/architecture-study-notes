@@ -41,13 +41,17 @@ A1 橫式 841 × 594 mm
 
 ```bash
 cd 圖說
-python3 board_110.py                  # 110 為手寫腳本（校正版基準）
-python3 board_112.py                  # 其餘八年走 board_builder
-for y in 106 107 108 109 111 112 113 114; do python3 board_$y.py; done
+for y in 106 107 108 109 110 111 112 113 114; do python3 board_$y.py; done   # 110 為手寫腳本，其餘走 board_builder
 for f in boards/*.svg; do rsvg-convert -w 2400 "$f" -o "${f%.svg}.png"; done
-pdfunite boards/10*.pdf boards/11*.pdf boards/106-114_敷地計畫考場大圖_合訂.pdf
+# 合訂 PDF：轉 PDF 時改用文泉驛正黑（TrueType 子集約 0.2 MB／頁；Noto CJK 經 cairo 子集化每頁 >1 MB）
+T=$(mktemp -d); for f in boards/1*_大圖.svg; do b=$(basename "${f%.svg}")
+  sed 's/font-family="Noto Sans CJK TC[^"]*"/font-family="WenQuanYi Zen Hei, sans-serif"/' "$f" > "$T/$b.svg"
+  rsvg-convert -f pdf "$T/$b.svg" -o "$T/$b.pdf"; done
+pdfunite "$T"/1*_大圖.pdf boards/106-114_敷地計畫考場大圖_合訂.pdf
 python3 gen_tables.py                 # 重新產生逐年數值表
 ```
+
+> 110–114 五張的量體、車位、E、G、D 與 [24 §5 考場版算式](../敷地計畫與都市設計/24-容積與地下室計算法.md) 同一組數字（2026-10-31 同步）。
 
 ## 檔案
 
