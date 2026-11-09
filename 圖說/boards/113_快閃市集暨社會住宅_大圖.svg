@@ -123,7 +123,7 @@
 <text x="9.00" y="457.40" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">車行　地下車道設東側 20 M 道路，完全避開西側國小接送。</text>
 <text x="9.00" y="461.30" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">卸貨　生鮮卸貨在北側西端，與市集主入口錯開、限時段。</text>
 <text x="9.00" y="465.20" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">停車　地下汽車（含無障礙）依技則按用途與樓地板核算，</text>
-<text x="9.00" y="469.10" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　方案：汽 35（含無障礙 1）＋機 35〔方案・須依核定土管核算〕。</text>
+<text x="9.00" y="469.10" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　方案：汽 62（含無障礙 2）＋機 62；B1 汽 32、B2 汽 30〔方案〕。</text>
 <text x="9.00" y="473.00" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">防災　廣場為避難集結地；社宅 8F 達防空門檻，B1 停車兼作；二方向避難。</text>
 <text x="9.00" y="476.90" font-size="2.7" fill="#333" text-anchor="start" font-weight="normal" opacity="1">減洪　廣場透水鋪面＋地下滯蓄槽，滯蓄後再放流。</text>
 <text x="9.00" y="480.80" font-size="2.7" fill="#555" text-anchor="start" font-weight="normal" opacity="1">　　　⚠ 有人、有車區域不得臨時受淹。</text>
@@ -229,7 +229,8 @@
 <circle cx="355.02" cy="128.89" r="0.55" fill="#555"/>
 <text x="337.82" y="124.79" font-size="2.6" fill="#555" text-anchor="end" font-weight="bold" opacity="1">生鮮卸貨－北側西端、與人流錯開</text>
 <path d="M 346.70 114.34 L 465.22 114.34 L 465.22 180.87 L 346.70 180.87 Z" fill="none" stroke="#c0392b" stroke-width="0.7" stroke-dasharray="2.6 1.6"/>
-<text x="365.42" y="175.05" font-size="2.8" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">地下開挖範圍（B1 停車・兼防空避難）</text>
+<rect x="375.81" y="116.42" width="87.33" height="60.30" fill="none" stroke="#c0392b" stroke-width="0.4" stroke-dasharray="0.8 1.0"/>
+<text x="365.42" y="175.05" font-size="2.8" fill="#c0392b" text-anchor="start" font-weight="bold" opacity="1">地下開挖範圍（B1 停車・兼防空避難；細點線＝B2 局部 42×29）</text>
 <text x="365.42" y="179.83" font-size="2.4" fill="#c0392b" text-anchor="start" font-weight="normal" opacity="1">D＝57×32＝1,824 ㎡　D/A＝52.1%〔題目點名須標示〕</text>
 <line x1="276.01" y1="161.12" x2="517.20" y2="161.12" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="5 1.6 1.4 1.6"/>
 <text x="269.77" y="163.20" font-size="4.0" fill="#1a1a1a" text-anchor="middle" font-weight="bold" opacity="1">A</text>
@@ -269,8 +270,10 @@
 <rect x="544.59" y="337.00" width="72.41" height="34.00" fill="#f2f0ec" stroke="#8a8a8a" stroke-width="0.3"/>
 <text x="580.79" y="335.40" font-size="2.3" fill="#888" text-anchor="middle" font-weight="normal" opacity="1">對側住宅</text>
 <line x1="197.00" y1="371.00" x2="617.00" y2="371.00" stroke="#1a1a1a" stroke-width="0.8"/>
-<rect x="312.86" y="371.00" width="206.38" height="7.00" fill="#f7f7f5" stroke="#1a1a1a" stroke-width="0.45" stroke-dasharray="2 1.2"/>
-<text x="416.05" y="376.40" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">B1 停車・兼防空避難</text>
+<rect x="363.55" y="371.00" width="152.07" height="10.00" fill="#f7f7f5" stroke="#1a1a1a" stroke-width="0.45" stroke-dasharray="2 1.2"/>
+<text x="439.59" y="379.40" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">B2 局部（汽 30）</text>
+<rect x="312.86" y="371.00" width="206.38" height="5.00" fill="#f7f7f5" stroke="#1a1a1a" stroke-width="0.45" stroke-dasharray="2 1.2"/>
+<text x="416.05" y="374.40" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" opacity="1">B1 停車・兼防空避難</text>
 <rect x="309.24" y="367.10" width="188.28" height="3.90" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
 <text x="310.64" y="369.30" font-size="2.2" fill="#999" text-anchor="start" font-weight="normal" opacity="1">1F</text>
 <rect x="309.24" y="363.20" width="188.28" height="3.90" fill="#fff" stroke="#1a1a1a" stroke-width="0.45"/>
@@ -444,7 +447,7 @@
 <text x="827.00" y="176.20" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
 <rect x="632.00" y="180.00" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
 <text x="634.50" y="183.80" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">開挖範圍</text>
-<text x="634.50" y="187.40" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">D＝1,824 ㎡、D/A＝52.1%，紅虛線標示</text>
+<text x="634.50" y="187.40" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" opacity="1">D＝1,824 ㎡、D/A＝52.1%，紅虛線標示；B2 局部細點線</text>
 <text x="827.00" y="185.80" font-size="4.0" fill="#4a7a3a" text-anchor="end" font-weight="bold" opacity="1">✓</text>
 <rect x="632.00" y="189.60" width="199.00" height="8.60" fill="#f7f9fb" stroke="#8a8a8a" stroke-width="0.25"/>
 <text x="634.50" y="193.40" font-size="2.8" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">機能關係圖</text>
@@ -489,11 +492,11 @@
 <rect x="632.00" y="301.30" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
 <text x="634.00" y="306.20" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §59</text>
 <text x="686.00" y="306.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">停車空間依用途與樓地板核算</text>
-<text x="758.00" y="306.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B1 汽 35（含無障礙 1）＋機 35〔方案〕</text>
+<text x="758.00" y="306.20" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">汽 62（含無障礙 2）＋機 62，B1＋B2〔方案〕</text>
 <rect x="632.00" y="308.50" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
 <text x="634.00" y="313.40" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §141</text>
 <text x="686.00" y="313.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">防空避難（非供公眾 6 層以上）</text>
-<text x="758.00" y="313.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">社宅 8F 達門檻；B1 停車 1,522.5 ㎡ ≧ 1,434 兼作</text>
+<text x="758.00" y="313.40" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">社宅 8F 達門檻；B1 停車 1,497 ㎡ ≧ 1,434 兼作</text>
 <rect x="632.00" y="315.70" width="199.00" height="7.20" fill="#ffffff" stroke="#e8e6e2" stroke-width="0.22"/>
 <text x="634.00" y="320.60" font-size="2.5" fill="#2f6f9f" text-anchor="start" font-weight="bold" opacity="1">技則 §305</text>
 <text x="686.00" y="320.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">基地保水</text>
@@ -547,7 +550,7 @@
 <text x="634.00" y="455.60" font-size="2.5" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">界線</text>
 <text x="650.00" y="455.60" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">量體與開挖均在界內</text>
 <text x="827.00" y="455.60" font-size="2.4" fill="#4a7a3a" text-anchor="end" font-weight="normal" opacity="1">✓ 南側退 17M 為廣場</text>
-<rect x="632.00" y="461.90" width="199.00" height="51.00" fill="#f4f6f8" stroke="#8a8a8a" stroke-width="0.3"/>
+<rect x="632.00" y="461.90" width="199.00" height="55.40" fill="#f4f6f8" stroke="#8a8a8a" stroke-width="0.3"/>
 <text x="634.50" y="466.70" font-size="3.0" fill="#1a1a1a" text-anchor="start" font-weight="bold" opacity="1">量體計算式（逐行可校核）</text>
 <text x="634.50" y="472.10" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">A ＝ 70 × 50 ＝ 3,500 ㎡〔題目給定〕</text>
 <text x="634.50" y="476.50" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B上限 ＝ 1,575 ㎡　F上限 ＝ 10,500 ㎡</text>
@@ -555,8 +558,9 @@
 <text x="634.50" y="485.30" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">F ＝ 6,450÷0.75＋非住宅 1,400 ＝ 8,600＋1,400 ＝ 10,000 ≦ 10,500 …ok（95.2%）</text>
 <text x="634.50" y="489.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">敏感度：公設率 30% → 10,615 超 115；原 40／60 ㎡ → 11,000 超限</text>
 <text x="634.50" y="494.10" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B ＝ 8,600÷6 層 ≒ 1,434（41.0%）≦ 1,575 …ok（每層 1房 15＋2房 10）</text>
-<text x="634.50" y="498.50" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">車位 住宅 27＋市場 8 ＝ 35；E ＝ 35×40＋35×3.5＋機電 150 ＝ 1,672.5</text>
-<text x="634.50" y="502.90" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">G ＝ 10,000＋1,672.5 ＝ 11,672.5　D ＝ 57×32 ＝ 1,824（52.1%）≧ E</text>
-<text x="634.50" y="507.30" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">雨水貯集 ＝ 3,500 × 0.045 ＝ 157.5 m³（技則 §4-3）</text>
+<text x="634.50" y="498.50" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">車位 住宅 (8,600−500)÷150＝54＋市場 8 ＝ 62；E ＝ 62×43.5＋機電 150 ＝ 2,847</text>
+<text x="634.50" y="502.90" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">G ＝ 10,000＋2,847 ＝ 12,847　D ＝ 57×32 ＝ 1,824（52.1%）＜ E → 加 B2</text>
+<text x="634.50" y="507.30" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">B1 ＝ 32×40＋62×3.5＋150 ＝ 1,647 ≦ D；B2 ＝ 30×40 ＝ 1,200 ≦ 局部 42×29</text>
+<text x="634.50" y="511.70" font-size="2.4" fill="#333" text-anchor="start" font-weight="normal" opacity="1">雨水貯集 ＝ 3,500 × 0.045 ＝ 157.5 m³（技則 §4-3）</text>
 <text x="632.00" y="585.00" font-size="2.4" fill="#999" text-anchor="start" font-weight="normal" opacity="1">113 年 快閃市集暨社會住宅｜80150 敷地計畫與都市設計｜考場復原稿（可校核線稿）</text>
 </svg>
