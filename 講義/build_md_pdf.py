@@ -63,6 +63,7 @@ def main():
     text = open(src, encoding="utf-8").read()
     body = markdown.markdown(text, extensions=["tables", "fenced_code", "sane_lists"])
     body = re.sub(r'<a href="(?!https?:)[^"]*">', "<a>", body)   # 相對連結在 PDF 內不可點
+    body = body.replace("<li>[ ] ", "<li>☐ ").replace("<li>[x] ", "<li>☑ ")   # 打勾清單
     page = f"<!doctype html><html lang='zh-Hant'><head><meta charset='utf-8'><style>{CSS}</style></head><body>{body}</body></html>"
     with tempfile.TemporaryDirectory() as t:
         h = os.path.join(t, "doc.html")
