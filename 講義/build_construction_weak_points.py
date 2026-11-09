@@ -8,6 +8,8 @@
 附圖：建築構造與施工/img/箱型柱接頭示意.png（不存在或加 --redraw 時以 Pillow 重畫）。
 
 執行：python3 講義/build_construction_weak_points.py [--redraw]
+其他筆記：加 --src <md> --out <docx> --header <頁首> --breaks '## 2.,## 3.'（換頁的二級標題開頭）
+  例：06 考前重點筆記 → python3 講義/build_construction_weak_points.py --src 建築構造與施工/06-考前重點筆記.md --out 講義/建築構造與施工_考前重點筆記.docx --header '115 建築師｜建築構造與施工 考前重點筆記' --breaks '## 2.,## 3.,## 4.'
 """
 import os
 import re
@@ -195,12 +197,21 @@ def render(md):
     flush()
 
 
+def arg(name, default):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
+
+
 def main():
+    global SRC, OUT, PAGE_BREAK_BEFORE
+    SRC = arg('--src', SRC)
+    OUT = arg('--out', OUT)
+    PAGE_BREAK_BEFORE = tuple(arg('--breaks', ','.join(PAGE_BREAK_BEFORE)).split(','))
+    header = arg('--header', '115 建築師｜建築構造與施工 弱項重點整理｜依 80 題模擬卷錯題')
     if '--redraw' in sys.argv or not os.path.exists(FIG):
         draw_box_column(FIG)
     hp = g.sec.header.paragraphs[0]
     hp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    g.font(hp.add_run('115 建築師｜建築構造與施工 弱項重點整理｜依 80 題模擬卷錯題'), 8, color=g.GRAY)
+    g.font(hp.add_run(header), 8, color=g.GRAY)
     fp = g.sec.footer.paragraphs[0]
     fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
     g.font(fp.add_run('第 '), 8.5, color=g.GRAY)
@@ -212,7 +223,7 @@ def main():
     render(g.read(SRC))
 
     cp = g.doc.core_properties
-    cp.title = '建築構造與施工｜弱項重點整理'
+    cp.title = os.path.splitext(os.path.basename(OUT))[0]
     cp.subject = '建築構造與施工'
     cp.author = 'architecture-study-notes（AI 協作編擬）'
     cp.keywords = '建築師, 建築構造與施工, 弱項, 重點整理'
