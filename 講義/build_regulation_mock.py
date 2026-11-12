@@ -2,8 +2,10 @@
 """營建法規與實務｜115 年模擬試題（80 題選擇題版）Word 試卷。
 單一事實來源：營建法規與實務/01-115年模擬試題.md（題目）、02-115年模擬試題詳解.md（答案）
 改 markdown 重跑本檔即更新：python3 講義/build_regulation_mock.py
+第二回（考前預測卷）：python3 講義/build_regulation_mock.py 2  →  讀 09／10
 """
 import re
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -16,9 +18,19 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC_Q = ROOT / '營建法規與實務' / '01-115年模擬試題.md'
-SRC_A = ROOT / '營建法規與實務' / '02-115年模擬試題詳解.md'
-OUT = ROOT / '講義' / '營建法規_115模擬試題_80題.docx'
+ROUND = sys.argv[1] if len(sys.argv) > 1 else '1'
+CONF = {
+    '1': dict(q='01-115年模擬試題.md', a='02-115年模擬試題詳解.md', out='營建法規_115模擬試題_80題.docx',
+              title='營建法規與實務｜模擬試題（80 題選擇題版）',
+              note='※ 本卷為 AI 依命題慣例模擬，並非考選部試題；法規基準日 115 年 11 月 4 日，條號與數字以全國法規資料庫最新版為準。'),
+    '2': dict(q='09-115年模擬試題第二回.md', a='10-115年模擬試題第二回詳解.md', out='營建法規_115模擬試題_第二回.docx',
+              title='營建法規與實務｜模擬試題第二回（考前預測卷）',
+              note='※ 本卷為 AI 模擬命題，並非考選部試題，亦不保證命中；題型、配分與題序比照 108–114 年試卷，'
+                   '各題依全國法規資料庫現行條文（整編截止 115 年 10 月 30 日）或歷屆官方答案命題。禁止使用電子計算器。'),
+}[ROUND]
+SRC_Q = ROOT / '營建法規與實務' / CONF['q']
+SRC_A = ROOT / '營建法規與實務' / CONF['a']
+OUT = ROOT / '講義' / CONF['out']
 
 CJK = 'Microsoft JhengHei'
 NAVY = RGBColor(0x1F, 0x3B, 0x5C)
@@ -149,7 +161,7 @@ font(p.add_run('115 年專門職業及技術人員高等考試　建築師（模
 p = doc.add_paragraph()
 p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 spacing(p, 0, 6)
-font(p.add_run('營建法規與實務｜模擬試題（80 題選擇題版）'), 17, bold=True, color=NAVY)
+font(p.add_run(CONF['title']), 17, bold=True, color=NAVY)
 bottom_rule(p)
 
 t = doc.add_table(rows=len(info), cols=2)
@@ -166,7 +178,7 @@ for i, (k, v) in enumerate(info):
 set_widths(t, [3.0, TEXT_W - 3.0])
 
 notes = [
-    '※ 本卷為 AI 依命題慣例模擬，並非考選部試題；法規基準日 115 年 11 月 4 日，條號與數字以全國法規資料庫最新版為準。',
+    CONF['note'],
     '※ 本測驗為單一選擇題，請選出一個正確或最適當的答案；複選作答者，該題不予計分。',
     '※ 共 80 題，每題 1.25 分，滿分 100 分。請將答案劃記於卷末作答卡；參考答案在最後一頁，作答完畢再翻閱。',
 ]
@@ -181,7 +193,7 @@ spacing(spacer, 0, 4)
 bottom_rule(spacer, 'B0B8C1', 6)
 
 # ---------------- 題目 ----------------
-NEG = re.compile(r'(「非屬」|「非」|錯誤|不包括|非屬)')
+NEG = re.compile(r'(「非屬」|「非」|錯誤|不包括|非屬|無須|不符規定|應計入)')
 
 
 def width(s):
@@ -273,7 +285,7 @@ def grid_page(heading, sub, row_label, values):
 
 grid_page('測驗題作答卡', '每題 1.25 分｜答對 ____ 題 × 1.25 ＝ ______ 分（60 分＝答對 48 題）',
           '作答', [''] * len(questions))
-grid_page('參考答案', '作答完畢再翻閱｜逐題法源與誘答解析見 營建法規與實務／02-115年模擬試題詳解.md',
+grid_page('參考答案', '作答完畢再翻閱｜逐題法源與誘答解析見 營建法規與實務／' + CONF['a'],
           '答案', key)
 
 doc.core_properties.title = title
