@@ -316,14 +316,25 @@ def add_field(paragraph, instr, size):
 
 
 # ---------------------------------------------------------------- 試題排版
-def render_question(n, stem, opts):
+def render_stem(n, stem, blank=False):
+    """題號＋題幹；blank=True 時在題幹前加（　）作答欄"""
     p = para(size=Q_SIZE, hanging=Q_INDENT, before=4, after=1.5, keep_next=True)
     add_tab_stops(p, [Q_INDENT])
     font(p.add_run(f'{n}.'), Q_SIZE, True, NAVY)
     font(p.add_run('\t'), Q_SIZE)
+    if blank:
+        font(p.add_run('（　）'), Q_SIZE)
     emit(p, stem, Q_SIZE)
     p.paragraph_format.keep_together = True
+    return p
 
+
+def render_question(n, stem, opts):
+    render_stem(n, stem)
+    render_options(opts)
+
+
+def render_options(opts):
     labels = [f'({k})' for k in 'ABCD']
     width = max(disp_w(o) for o in opts)
     avail = TEXT_W - Q_INDENT
