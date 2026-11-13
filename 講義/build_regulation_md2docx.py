@@ -230,7 +230,7 @@ def table(rows):
         for j, txt in enumerate(row):
             cell = t.rows[i].cells[j]
             p = cell.paragraphs[0]
-            spacing(p, 1, 1, 1.02, keep=(i < len(rows) - 1))
+            spacing(p, 1, 1, 1.02, keep=(i < len(rows) - 1) if len(rows) <= 12 else (i == 0))
             if i == 0:
                 shade(cell, 'E4EAF0')
                 emit(p, txt, BODY - 0.5, NAVY, True)
