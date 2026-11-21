@@ -13,6 +13,7 @@
   const DASHBOARD = 'https://claude.ai/artifact/N9HnLsT8NB46aZa8f2hQm2';
   const VISION = 'https://claude.ai/artifact/LCWGPVdjLN1kds1bWCB8nh';
   const VIEWER = 'https://claude.ai/artifact/7mSMrv1gAdsEhdT8yCrKXw';
+  const BUILDER = 'https://jeremy0819.github.io/BUILDER/';
 
   const stage = $('stage');
   const panelBody = $('panelBody');
@@ -382,6 +383,7 @@
         <li><a href="${DASHBOARD}" target="_blank" rel="noopener">全台房市供給量體儀表板</a>：建照、開工、使照、拆照與信用管制</li>
         <li><a href="${VISION}" target="_blank" rel="noopener">3D 量體導覽 v2 願景提案</a>：未來城市五個轉變</li>
         <li><a href="${VIEWER}" target="_blank" rel="noopener">敷地 3D 量體導覽</a>：113、114 年考題示範量體</li>
+        <li><a href="${BUILDER}" target="_blank" rel="noopener">BUILDER 都更決策系統</a>：真實案件的容積、共負與分回交給同一份計算核心，排出先談誰、什麼不能說</li>
       </ul>`;
   }
 
@@ -621,7 +623,8 @@
         ${row('風險管理＋銷售管理', `${K.money(cost.risk + cost.sales)}元`, 'assume')}
         ${row('地主可分配', `${K.money(f.pool)}元（整體 ${f.gain.toFixed(2)} 倍）`, 'model')}
       </div>
-      <p class="note">新北近年案件共同負擔多在 45–56%（公開案例 55.71%，2026-08 審議）${src('data')}。本頁用簡化公式，實際以估價師查估與審議核定為準。</p>`;
+      <p class="note">新北近年案件共同負擔多在 45–56%（公開案例 55.71%，2026-08 審議）${src('data')}。本頁用簡化公式，實際以估價師查估與審議核定為準。</p>
+      <p class="note">真實案件請改用 <a href="${BUILDER}" target="_blank" rel="noopener">BUILDER</a> 的四步流程：權利變換、共同負擔與分回都由同一份計算核心產出，並逐戶排出整合順序。</p>`;
   }
 
   // ── 城市模擬 ───────────────────────────────────────────────────
