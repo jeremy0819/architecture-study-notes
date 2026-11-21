@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>城市更新沙盒</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="以虛構的板橋老街廓為例，用 3D 模型比較現況、老宅延壽、危老與都更，試算容積獎勵、冬至日照、地主分回，並模擬 2026–2046 年街區的更新。">
+<meta name="description" content="以虛構的板橋老街廓為例，用 3D 模型比較現況、老宅延壽、危老與都更，試算容積獎勵、冬至日照、地主分回；用 BUILDER 計算核心走完基地、產品、地主、決策四步；套上房市儀表板的信用管制、供給與老宅延壽資格，並模擬 2026–2046 年街區的更新。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+TC:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
@@ -32,7 +32,7 @@
   --bad-bg: rgba(179, 38, 30, 0.12);
   --shadow: 0 6px 22px rgba(19, 34, 50, 0.14);
 
-  --src-law: #2c5aa0; --src-data: #6b4fb0; --src-model: #0f7f86; --src-assume: #8a6a1f; --src-draft: #b04a2c;
+  --src-law: #2c5aa0; --src-data: #6b4fb0; --src-model: #0f7f86; --src-assume: #8a6a1f; --src-draft: #b04a2c; --src-core: #1f6f43;
 
   --scene-sky: #dbe4eb; --scene-night: #0b1422; --scene-ground: #d5dbd4; --scene-road: #b4bbc1; --scene-walk: #e5e1d9;
   --scene-mark: #f7f6f0; --scene-park: #a6c696; --scene-field: #98c287; --scene-track: #c67f62; --scene-plaza: #e2dfd7;
@@ -40,7 +40,7 @@
   --scene-old: #d6b289; --scene-old-shop: #c5976a; --scene-roofadd: #6a91b6; --scene-tank: #eef2f5; --scene-reno: #bcd7cd;
   --scene-elev: #3e6e6c; --scene-pv: #2a3d66; --scene-new: #7cc2c3; --scene-podium: #f0ebe2; --scene-civic: #96cfa4;
   --scene-roof-green: #8cbd77; --scene-danger: #b6b1d6; --scene-new-edge: #3a5c62; --scene-hl: #ff8a3d; --scene-pick: #f4d073;
-  --scene-ghost: #ffffff; --scene-mrt: #6db6d6; --scene-site: #cf2a40;
+  --scene-ghost: #ffffff; --scene-mrt: #6db6d6; --scene-site: #cf2a40; --scene-over: #d8344a;
   --z-res: #f1d35a; --z-com: #ea7a69; --z-park: #66bf76; --z-school: #78b5e2;
   --route-a: #d23b3b; --route-b: #ec8a2b; --route-c: #ddbc2c; --walk: #2f6ad1; --evac: #1b9858; --wind: #4f88b5; --open: #1fa19a;
   --heat-0: #4b1d6c; --heat-1: #a3307a; --heat-2: #e0755b; --heat-3: #f5c86a; --heat-loss: #6a3fd0; --heat-bad: #e0263e;
@@ -61,14 +61,14 @@
     --accent: #3cc1c5; --accent-ink: #062226; --accent-soft: rgba(60, 193, 197, 0.16); --site: #ff5a6e;
     --ok: #4fd18c; --warn: #f0b545; --bad: #ff7b72; --ok-bg: rgba(79, 209, 140, 0.14); --bad-bg: rgba(255, 123, 114, 0.14);
     --shadow: 0 8px 26px rgba(0, 0, 0, 0.45);
-    --src-law: #8fb4ff; --src-data: #c3a8ff; --src-model: #5fd3d6; --src-assume: #e2c06b; --src-draft: #ff9d7e;
+    --src-law: #8fb4ff; --src-data: #c3a8ff; --src-model: #5fd3d6; --src-assume: #e2c06b; --src-draft: #ff9d7e; --src-core: #7fdca5;
     --scene-sky: #121c27; --scene-night: #070d16; --scene-ground: #222a31; --scene-road: #353d45; --scene-walk: #3b4249;
     --scene-mark: #6d747a; --scene-park: #3b5a3c; --scene-field: #3c6640; --scene-track: #7a4a3a; --scene-plaza: #3a4047;
     --scene-setback: #454a4f; --scene-tree: #47704a; --scene-trunk: #5a4a3c; --scene-ctx: #aeb6bd; --scene-edge: #3c4651;
     --scene-old: #b39066; --scene-old-shop: #a37a52; --scene-roofadd: #4f7aa3; --scene-tank: #cfd6dc; --scene-reno: #8fb9aa;
     --scene-elev: #6bb3ae; --scene-pv: #2e4a86; --scene-new: #5ab4b6; --scene-podium: #c9c3b8; --scene-civic: #6fb784;
     --scene-roof-green: #5e9a4d; --scene-danger: #9089c4; --scene-new-edge: #20383c; --scene-hl: #ff9a52; --scene-pick: #e6bf5a;
-    --scene-ghost: #d8e3ea; --scene-mrt: #4ea3c9; --scene-site: #ff5a6e;
+    --scene-ghost: #d8e3ea; --scene-mrt: #4ea3c9; --scene-site: #ff5a6e; --scene-over: #ff5d6e;
     --z-res: #c9a93a; --z-com: #c4594a; --z-park: #3f9a52; --z-school: #4f8fc0;
     --route-a: #ff5c5c; --route-b: #ffa04a; --route-c: #f0d04a; --walk: #6ea2ff; --evac: #3fd082; --wind: #7bb4de; --open: #3cc8be;
     --heat-0: #c04de0; --heat-1: #e0559d; --heat-2: #f08a63; --heat-3: #f7d27d; --heat-loss: #9d7bff; --heat-bad: #ff4560;
@@ -83,14 +83,14 @@
   --accent: #3cc1c5; --accent-ink: #062226; --accent-soft: rgba(60, 193, 197, 0.16); --site: #ff5a6e;
   --ok: #4fd18c; --warn: #f0b545; --bad: #ff7b72; --ok-bg: rgba(79, 209, 140, 0.14); --bad-bg: rgba(255, 123, 114, 0.14);
   --shadow: 0 8px 26px rgba(0, 0, 0, 0.45);
-  --src-law: #8fb4ff; --src-data: #c3a8ff; --src-model: #5fd3d6; --src-assume: #e2c06b; --src-draft: #ff9d7e;
+  --src-law: #8fb4ff; --src-data: #c3a8ff; --src-model: #5fd3d6; --src-assume: #e2c06b; --src-draft: #ff9d7e; --src-core: #7fdca5;
   --scene-sky: #121c27; --scene-night: #070d16; --scene-ground: #222a31; --scene-road: #353d45; --scene-walk: #3b4249;
   --scene-mark: #6d747a; --scene-park: #3b5a3c; --scene-field: #3c6640; --scene-track: #7a4a3a; --scene-plaza: #3a4047;
   --scene-setback: #454a4f; --scene-tree: #47704a; --scene-trunk: #5a4a3c; --scene-ctx: #aeb6bd; --scene-edge: #3c4651;
   --scene-old: #b39066; --scene-old-shop: #a37a52; --scene-roofadd: #4f7aa3; --scene-tank: #cfd6dc; --scene-reno: #8fb9aa;
   --scene-elev: #6bb3ae; --scene-pv: #2e4a86; --scene-new: #5ab4b6; --scene-podium: #c9c3b8; --scene-civic: #6fb784;
   --scene-roof-green: #5e9a4d; --scene-danger: #9089c4; --scene-new-edge: #20383c; --scene-hl: #ff9a52; --scene-pick: #e6bf5a;
-  --scene-ghost: #d8e3ea; --scene-mrt: #4ea3c9; --scene-site: #ff5a6e;
+  --scene-ghost: #d8e3ea; --scene-mrt: #4ea3c9; --scene-site: #ff5a6e; --scene-over: #ff5d6e;
   --z-res: #c9a93a; --z-com: #c4594a; --z-park: #3f9a52; --z-school: #4f8fc0;
   --route-a: #ff5c5c; --route-b: #ffa04a; --route-c: #f0d04a; --walk: #6ea2ff; --evac: #3fd082; --wind: #7bb4de; --open: #3cc8be;
   --heat-0: #c04de0; --heat-1: #e0559d; --heat-2: #f08a63; --heat-3: #f7d27d; --heat-loss: #9d7bff; --heat-bad: #ff4560;
@@ -194,7 +194,7 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .date { font-family: var(--f-num); font-weight: 600; color: var(--ink); margin-right: 6px; font-size: 12.5px; }
 
 .src { display: inline-block; font-family: var(--f-mono); font-size: 10px; line-height: 1; padding: 3px 4px 2px; border-radius: 3px; margin-left: 5px; vertical-align: 1px; border: 1px solid currentColor; white-space: nowrap; }
-.s-law { color: var(--src-law); } .s-data { color: var(--src-data); } .s-model { color: var(--src-model); } .s-assume { color: var(--src-assume); } .s-draft { color: var(--src-draft); }
+.s-core { color: var(--src-core); font-weight: 700; } .s-law { color: var(--src-law); } .s-data { color: var(--src-data); } .s-model { color: var(--src-model); } .s-assume { color: var(--src-assume); } .s-draft { color: var(--src-draft); }
 
 .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .tile { background: var(--glass-strong); border: 1px solid var(--glass-line); border-radius: var(--r); padding: 9px 10px; min-width: 0; }
@@ -311,6 +311,51 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .lens-card h3 { margin: 0; }
 .lens-card p { margin: 6px 0 0; color: var(--ink-2); }
 
+/* BUILDER 四步 */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; margin-top: 12px; }
+.steps button { appearance: none; border: 1px solid var(--glass-line); background: var(--glass-strong); border-radius: var(--r); padding: 6px 4px; cursor: pointer; color: var(--ink-2); font-size: 12.5px; display: grid; gap: 1px; justify-items: center; }
+.steps button b { font-family: var(--f-num); font-size: 15px; color: var(--ink-3); line-height: 1.1; }
+.steps button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.steps button[aria-pressed="true"] b { color: var(--accent); }
+.prov { margin-top: 14px; padding: 8px 10px; border: 1px dashed var(--glass-line); border-radius: var(--r); font-size: 11.5px; color: var(--ink-3); line-height: 1.6; }
+.prov code { font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); overflow-wrap: anywhere; }
+.prov summary { cursor: pointer; color: var(--ink-2); }
+.prov dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 2px 8px; margin: 6px 0 0; }
+.prov dt { color: var(--ink-2); } .prov dd { margin: 0; }
+.vd { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 10px 12px; border-radius: var(--r); background: var(--glass-strong); border: 1px solid var(--glass-line); }
+.vd b { font-family: var(--f-num); font-size: 24px; letter-spacing: 0.04em; line-height: 1; padding: 6px 10px; border-radius: 4px; }
+.vd.go b { color: var(--ok); background: var(--ok-bg); } .vd.caution b { color: var(--warn); background: var(--accent-soft); } .vd.stop b { color: var(--bad); background: var(--bad-bg); }
+.vd span { font-size: 13px; color: var(--ink-2); }
+.stack { display: flex; height: 14px; border-radius: 3px; overflow: hidden; margin-top: 8px; background: var(--line); }
+.stack i { display: block; height: 100%; min-width: 1px; }
+.stack i:nth-child(1), .lg i.c1 { background: var(--accent); } .stack i:nth-child(2), .lg i.c2 { background: var(--sim-reno); }
+.stack i:nth-child(3), .lg i.c3 { background: var(--sim-build); } .stack i:nth-child(4), .lg i.c4 { background: var(--age-3); }
+.stack i:nth-child(5), .lg i.c5 { background: var(--src-law); } .stack i:nth-child(6), .lg i.c6 { background: var(--src-data); }
+.lg i.c1, .lg i.c2, .lg i.c3, .lg i.c4, .lg i.c5, .lg i.c6 { height: 9px; width: 9px; vertical-align: -1px; }
+.warns { display: grid; gap: 4px; margin-top: 8px; }
+.warns div { font-size: 12.5px; padding: 5px 8px; border-radius: 4px; background: var(--bad-bg); color: var(--bad); }
+.warns div.info { background: var(--line); color: var(--ink-2); }
+.btn { appearance: none; border: 1px solid var(--accent); background: var(--accent-soft); color: var(--ink); border-radius: var(--r); padding: 6px 10px; cursor: pointer; font-size: 13px; }
+.btn:hover { background: var(--accent); color: var(--accent-ink); }
+.btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.gtable { display: grid; border-top: 1px solid var(--line); margin-top: 8px; }
+.g-h, .g-r { display: grid; grid-template-columns: minmax(0, 1.5fr) 0.5fr 0.9fr 0.9fr; gap: 6px; padding: 5px 0; border-bottom: 1px solid var(--line); font-size: 12.5px; align-items: baseline; }
+.g-h { color: var(--ink-3); font-size: 11.5px; }
+.g-r > span:nth-child(n+2) { font-family: var(--f-num); font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.g-h > span:nth-child(n+2) { text-align: right; }
+.g-r.sel { background: var(--accent-soft); }
+.chart path.q1 { stroke: var(--accent); } .chart path.q2 { stroke: var(--sim-build); } .chart path.q3 { stroke: var(--src-law); }
+.lg i.q1 { background: var(--accent); } .lg i.q2 { background: var(--sim-build); } .lg i.q3 { background: var(--src-law); }
+.chart circle.q1 { fill: var(--accent); } .chart circle.q2 { fill: var(--sim-build); } .chart circle.q3 { fill: var(--src-law); }
+.ltv { display: grid; grid-template-columns: minmax(0, 1fr) 46px minmax(0, 1.1fr); gap: 4px 8px; align-items: center; font-size: 12.5px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+.ltv b { font-family: var(--f-num); text-align: right; }
+.ltv .bar { height: 8px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.ltv .bar i { display: block; height: 100%; background: var(--accent); }
+.ltv.chg .bar i { background: var(--ok); }
+.ltv small { grid-column: 1 / -1; color: var(--ink-3); font-size: 11.5px; }
+.chart-tip { font-size: 11.5px; color: var(--ink-3); margin-top: 2px; }
+.neg { color: var(--bad); } .pos { color: var(--ok); }
+
 /* dock (timeline) */
 .dock {
   position: absolute; bottom: var(--gap); left: max(calc(var(--gap) + 52px), env(safe-area-inset-left, 0px)); right: calc(var(--panel-w) + var(--gap) * 2);
@@ -402,8 +447,10 @@ a { color: var(--accent); text-underline-offset: 2px; }
       <button type="button" role="tab" id="tab-bonus" data-ch="bonus" aria-selected="false"><span class="n">02</span>容積獎勵</button>
       <button type="button" role="tab" id="tab-sun" data-ch="sun" aria-selected="false"><span class="n">03</span>日照陰影</button>
       <button type="button" role="tab" id="tab-share" data-ch="share" aria-selected="false"><span class="n">04</span>分回試算</button>
-      <button type="button" role="tab" id="tab-city" data-ch="city" aria-selected="false"><span class="n">05</span>城市模擬</button>
-      <button type="button" role="tab" id="tab-future" data-ch="future" aria-selected="false"><span class="n">06</span>2050</button>
+      <button type="button" role="tab" id="tab-case" data-ch="case" aria-selected="false"><span class="n">05</span>BUILDER 四步</button>
+      <button type="button" role="tab" id="tab-market" data-ch="market" aria-selected="false"><span class="n">06</span>房市</button>
+      <button type="button" role="tab" id="tab-city" data-ch="city" aria-selected="false"><span class="n">07</span>城市模擬</button>
+      <button type="button" role="tab" id="tab-future" data-ch="future" aria-selected="false"><span class="n">08</span>2050</button>
     </nav>
     <div class="tools">
       <div class="seg" id="views" role="group" aria-label="視角">
@@ -450,6 +497,8 @@ a { color: var(--accent); text-underline-offset: 2px; }
 <script src="js/calc.js"></script>
 <script src="js/data.js"></script>
 <script src="js/scene.js"></script>
+<script src="js/builder-data.js"></script>
+<script src="js/market-data.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

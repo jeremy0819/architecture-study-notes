@@ -82,6 +82,7 @@
       civic: tmat('--scene-civic'),
       roofGreen: tmat('--scene-roof-green'),
       danger: tmat('--scene-danger'),
+      over: tmat('--scene-over', { transparent: true, opacity: 0.85 }),
       newEdge: lmat('--scene-new-edge', { transparent: true, opacity: 0.75 }),
       hl: tmat('--scene-hl', { emissive: 0x000000 }),
       pick: tmat('--scene-pick'),
@@ -237,6 +238,7 @@
       night: false,
       sunDir: new THREE.Vector3(0.45, 0.78, 0.43).normalize(),
       heat: { left: null, right: null, single: null },
+      tint: null, // 章節指定的鄰房上色規則（回傳 'yes'｜'no'｜null）
     };
     let dirty = true;
     const invalidate = () => { dirty = true; };
@@ -1009,6 +1011,11 @@
           else if (status === 'renovated') mat = M.simReno;
           else mat = ageMat(year - b.year);
         }
+        if (!sim && state.tint) {
+          const t = state.tint(b);
+          if (t === 'yes') mat = M.simReno;
+          else if (t === 'no') mat = M.ctx;
+        }
         const h = (status === 'new' ? 3.2 : rec.fh) * floors;
         if (rec.base) rec.base.visible = status !== 'new';
         if (rec.roof) rec.roof.visible = status !== 'new' && status !== 'renovated';
@@ -1056,6 +1063,16 @@
         else showFloorUnits(no);
         invalidate();
       },
+      // 標準層 index ≥ from 的樓層以警示色顯示（from 為 null 時恢復）
+      markOverFloors(from) {
+        urban.floors.forEach((f) => {
+          if (f.index === undefined) return;
+          f.mesh.userData.baseMat = from !== null && from !== undefined && f.index >= from ? M.over : M.glass;
+          f.mesh.material = f.mesh.userData.baseMat;
+        });
+        invalidate();
+      },
+      setCtxTint(fn) { state.tint = fn || null; applyCtxColors(); },
       highlightNewUnit(id) {
         urban.unitG.children.forEach((m) => { if (m.userData.unitId) m.material = m.userData.unitId === id ? M.hl : M.pick; });
         invalidate();

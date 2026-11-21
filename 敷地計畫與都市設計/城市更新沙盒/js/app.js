@@ -8,7 +8,7 @@
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fmt = K.fmt;
   const pct = K.pct;
-  const SRC = { law: '法規', data: '資料', model: '模型', assume: '假設', draft: '草案' };
+  const SRC = { core: 'Core', law: '法規', data: '資料', model: '模型', assume: '假設', draft: '草案' };
   const src = (k) => `<span class="src s-${k}" title="${SRC[k]}">${SRC[k]}</span>`;
   const DASHBOARD = 'https://claude.ai/artifact/N9HnLsT8NB46aZa8f2hQm2';
   const VISION = 'https://claude.ai/artifact/LCWGPVdjLN1kds1bWCB8nh';
@@ -48,6 +48,7 @@
     cmp: { left: 'now', right: 'urban' },
     sun: { day: 'winter', hour: 10, mode: 'hours', scen: 'urban', compare: false },
     share: { oldId: 'A-3F-2', floor: 12, unit: 'B', priceNew: C.MARKET.priceNew, priceOld: C.MARKET.priceOld, cost: C.MARKET.costAbove, car: true },
+    core: { step: 'site', b: 10, floors: null, p: 4, c: 2, stage: 1, owner: 'A-3F-2' },
     city: { preset: 'current', policy: Object.assign({}, C.SIM.presets.current.policy), year: 2036 },
     lens: 'netzero',
     layers: { heights: true, zoning: false, roads: false, open: false, walk: false, disaster: false, wind: false, age: false, labels: true },
@@ -278,8 +279,263 @@
   const seg = (id, items, cur, label) => `<div class="seg" role="group" aria-label="${esc(label || '')}" id="${id}">${items.map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${v === cur}">${t}</button>`).join('')}</div>`;
   const checkMark = (ok) => (ok === null ? '<span class="chk na">—</span>' : ok ? '<span class="chk ok">符合</span>' : '<span class="chk bad">不符</span>');
 
+  // ── BUILDER 四步：數字全部來自 BUILDER Core 預先試算（js/builder-data.js），這裡只查表、不計算 ──
+  const G = window.BUILDER_GRID || null;
+  const BG = G ? G.meta.grid : null;
+  const MK = window.MARKET_SNAPSHOT || null;
+  const CORE_WARN = {
+    VOLUME_EXCEEDED: ['bad', '設計計入容積超過允建容積'],
+    SHARED_COST_HIGH: ['bad', '共同負擔比高於 Core 的全案管理合理區間（30–50%）'],
+    SHARED_COST_LOW: ['info', '共同負擔比低於合理區間，請檢查成本是否漏列'],
+    EFFICIENCY_OUT_OF_BAND: ['info', '銷坪比超出住宅常見範圍 1.58–1.68'],
+    VALUE_MULTIPLE_LOW: ['bad', '更新後價值倍數偏低'],
+    OWNERS_SHARE_MISMATCH: ['info', '地主持分合計不等於 1'],
+    OWNERS_VALUE_MISMATCH: ['info', '逐戶更新前價值合計與總額不符'],
+  };
+  const VERDICT = { GO: ['go', '值得推進'], CAUTION: ['caution', '有條件推進，先處理風險'], STOP: ['stop', '目前不宜推進'] };
+  const COST_NAMES = { A工程費用: '工程', B管維費用: '管理維護', C權變費用: '權變（拆遷、租金）', D貸款利息: '利息', E稅捐: '稅捐', F管理費用: '管理與銷售' };
+  const ownerGroup = {};
+  if (G) G.owners.groups.forEach((g, gi) => g.members.forEach((id) => { ownerGroup[id] = gi; }));
+  const yi = (v) => `${fmt(v / 10000, 1)} 億元`;
+  const signed = (v) => `${v > 0 ? '+' : ''}${(v * 100).toFixed(1)}%`;
+
+  function coreFloors() { return st.core.floors === null ? G.fit[st.core.b] : st.core.floors; }
+  function coreCap() { const n = coreFloors(); return G.capacity[st.core.b].find((r) => r[0] === n); }
+  function coreIndex(b, p, c) { return (b * BG.price.length + p) * BG.cost.length + c; }
+  function coreAt() {
+    const i = coreIndex(st.core.b, st.core.p, st.core.c);
+    const r = {};
+    G.fields.forEach((f, k) => { r[f] = G.rows[i][k]; });
+    return { i, r, parts: G.parts[i], warn: G.warnings[i], hash: G.hash[i], alloc: G.alloc[i], dec: G.decision[i] };
+  }
+  // 3D：裙樓＋n 層標準層（只是幾何堆疊）
+  function coreStack(n) {
+    const podH = C.URBAN.podium.floors.reduce((s, f) => s + f.h, 0);
+    return { towerFloors: n, floors: C.URBAN.podium.floors.length + n, height: podH + n * C.URBAN.tower.typH };
+  }
+  let urbanFor = 'mass';
+  function showCoreMass() {
+    if (!G) return;
+    if (st.core.step === 'people') {
+      restoreMass();
+      S.setScenario('now');
+      S.highlightOld(st.core.owner);
+      return;
+    }
+    S.highlightOld(null);
+    S.setScenario('urban');
+    const fit = G.fit[st.core.b];
+    const n = st.core.step === 'site' ? coreFloors() : fit;
+    S.rebuildUrban(coreStack(n));
+    urbanFor = 'core';
+    S.markOverFloors(n > fit ? fit : null);
+  }
+  function restoreMass() {
+    if (urbanFor !== 'mass') { S.rebuildUrban(MASS.stack); urbanFor = 'mass'; }
+  }
+  function groupLabel(grp) {
+    const units = grp.members.map((id) => C.OLD_UNITS.find((u) => u.id === id));
+    const u = units[0];
+    if (u.kind === 'house') return `${C.OLD.find((b) => b.id === u.bld).name}（每戶）`;
+    const blds = [...new Set(units.map((x) => x.bld))].join('、');
+    return `${blds} 棟 ${u.floor} 樓${u.kind === 'shop' ? '店面' : ''}`;
+  }
+  function warnList(codes) {
+    if (!codes.length) return '<p class="note">Core 沒有發出警示。</p>';
+    return `<div class="warns">${codes.map((c) => { const w = CORE_WARN[c] || ['info', c]; return `<div class="${w[0] === 'info' ? 'info' : ''}">Core 警示：${esc(w[1])}</div>`; }).join('')}</div>`;
+  }
+  function coreProv(at) {
+    const m = G.meta;
+    return `<details class="prov"><summary>來源：BUILDER Core ${esc(m.core_version)}（${esc(m.builder_commit)}）・input_hash <code>${esc(at.hash)}…</code></summary>
+      <p>input_hash 是 Core 對這組輸入取的指紋，用來核對畫面上的數字對應哪一組輸入。下列輸入不是 Core 產生，是這個示範街廓的假設：</p>
+      <dl>${Object.entries(m.assumptions).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}<dt>試算時間</dt><dd>${esc(m.generated_at)}</dd></dl></details>`;
+  }
+
+  function pCase() {
+    if (!G) return '<p class="warn">BUILDER 試算資料沒有載入（js/builder-data.js），請重新整理。</p>';
+    const at = coreAt();
+    const steps = [['site', '①', '基地'], ['product', '②', '產品'], ['people', '③', '地主'], ['decision', '④', '決策']];
+    const body = ({ site: coreSite, product: coreProduct, people: corePeople, decision: coreDecision })[st.core.step](at);
+    return `
+      <p class="eyebrow">BUILDER 都更決策系統｜Core ${esc(G.meta.core_version)}</p>
+      <h2>用 BUILDER 的四步算這塊地</h2>
+      <p class="lead">這一章的數字都是 BUILDER 計算核心對示範街廓算好的結果，網頁只依你選的條件查出對應那一筆，不自己計算。真實案件請到 <a href="${BUILDER}" target="_blank" rel="noopener">BUILDER</a> 輸入。</p>
+      <div class="steps" id="coreStep" role="group" aria-label="BUILDER 四步">${steps.map(([id, n, t]) => `<button type="button" data-v="${id}" aria-pressed="${st.core.step === id}"><b>${n}</b>${t}</button>`).join('')}</div>
+      ${body}
+      ${coreProv(at)}`;
+  }
+  function coreSite() {
+    const [n, base, allow, used, remain, over] = coreCap();
+    const fit = G.fit[st.core.b];
+    const bonus = Math.round(BG.bonus[st.core.b] * 100);
+    const usedW = Math.min(100, (used / Math.max(allow, used)) * 100), allowW = (allow / Math.max(allow, used)) * 100;
+    return `
+      <h3>① 基地：容積查核</h3>
+      <p class="note">選總獎勵率與塔樓層數。Core 依建築技術規則 §162 逐層查核：設計計入容積有沒有超過允建容積。</p>
+      <div class="field range"><label for="cB">容積獎勵率 <output id="cBV">${bonus}%</output></label><input type="range" id="cB" min="0" max="${BG.bonus.length - 1}" step="1" value="${st.core.b}"></div>
+      <div class="field range"><label for="cF">塔樓標準層 <output id="cFV">${n} 層（${n + 2}F）</output></label><input type="range" id="cF" min="${BG.floors[0]}" max="${BG.floors[BG.floors.length - 1]}" step="1" value="${n}"></div>
+      <div class="bbar" aria-hidden="true"><div class="bbar-fill" style="width:${usedW.toFixed(1)}%"></div>${over ? `<div class="bbar-over" style="left:${allowW.toFixed(1)}%;right:0"></div>` : ''}<div class="bbar-cap" style="left:${allowW.toFixed(1)}%"><span>允建</span></div></div>
+      <div class="rows">
+        ${row('基準容積', `${fmt(base)} ㎡`, 'core')}
+        ${row('允建容積', `${fmt(allow)} ㎡`, 'core')}
+        ${row('設計計入容積', `${fmt(used)} ㎡`, 'core')}
+        ${row('容積餘量', `<span class="${remain < 0 ? 'neg' : 'pos'}">${fmt(remain)} ㎡</span>`, 'core')}
+        ${row('Core 判定', over ? '<span class="chk bad">容積超出</span>' : '<span class="chk ok">未超出</span>', 'core')}
+      </div>
+      ${over ? `<p class="warn">模型上紅色的樓層超出允建容積，BUILDER 會擋下這個設計。這個獎勵率最多做 ${fit} 層標準層（${fit + 2}F）。</p>` : `<p class="note">這個獎勵率下，Core 判定最多可做 ${fit} 層標準層（${fit + 2}F）。</p>`}
+      ${n !== fit ? `<div class="btns"><button type="button" class="btn" id="cFit">改用 Core 可行的 ${fit} 層</button></div>` : ''}
+      <p class="note">〈容積獎勵〉章逐項勾選的結果目前是 ${pct(MASS.ub.pctTotal)}。BUILDER Core 目前只收一個總獎勵率，各款上限與總量上限的核對列在 BUILDER 的 M9.2 待辦。</p>`;
+  }
+  function coreProduct(at) {
+    const r = at.r, fit = G.fit[st.core.b], bonus = Math.round(BG.bonus[st.core.b] * 100);
+    const parts = G.cost_parts.map((k, i) => [k, at.parts[i]]);
+    const inBand = r.shared_cost_ratio >= 0.3 && r.shared_cost_ratio <= 0.5;
+    return `
+      <h3>② 產品：總銷與共同負擔</h3>
+      <p class="note">容積獎勵率 ${bonus}%，塔樓用 ① 中 Core 判定可行的 ${fit} 層標準層（${fit + 2}F）。調整房價與營造單價：</p>
+      <div class="field range"><label for="cP">新屋住宅單價 <output id="cPV">${BG.price[st.core.p]} 萬／坪</output></label><input type="range" id="cP" min="0" max="${BG.price.length - 1}" step="1" value="${st.core.p}"></div>
+      <div class="field range"><label for="cC">營造單價（含地下室，all-in） <output id="cCV">${BG.cost[st.core.c]} 萬／坪</output></label><input type="range" id="cC" min="0" max="${BG.cost.length - 1}" step="1" value="${st.core.c}"></div>
+      <div class="tiles">
+        ${tile('總銷', yi(r.total_sales), `可售 ${fmt(r.saleable_area)} 坪・銷坪比 ${r.efficiency_ratio.toFixed(3)}`, 'core')}
+        ${tile('共同負擔比', pct(r.shared_cost_ratio), `${yi(r.shared_cost)}${inBand ? '，在合理區間內' : '，超出 30–50%'}`, 'core')}
+        ${tile('地主分回', yi(r.owner_return_value), `占總銷 ${pct(r.owner_return_ratio)}`, 'core')}
+        ${tile('報酬率', pct(r.return_rate), '地主分回 ÷ 共同負擔（Core 定義）', 'core')}
+      </div>
+      <h3>共同負擔的組成</h3>
+      <div class="stack" role="img" aria-label="共同負擔組成">${parts.map(([k, v]) => `<i style="width:${((v / r.shared_cost) * 100).toFixed(2)}%" title="${esc(COST_NAMES[k])} ${fmt(v)} 萬元"></i>`).join('')}</div>
+      <div class="legend">${parts.map(([k, v], i) => `<span class="lg"><i class="c${i + 1}"></i>${esc(COST_NAMES[k])} ${fmt(v / 10000, 1)} 億</span>`).join('')}</div>
+      ${warnList(at.warn)}
+      <p class="note">〈分回試算〉章用的是沙盒自己的簡化教學公式，數字會和這裡不同；兩者不一致時以 BUILDER Core 為準。</p>
+      ${say(`依 BUILDER Core 試算，本案容積獎勵 ${bonus}%、新屋單價每坪 ${BG.price[st.core.p]} 萬元、營造單價每坪 ${BG.cost[st.core.c]} 萬元時，總銷約 ${yi(r.total_sales)}，共同負擔比約 ${pct(r.shared_cost_ratio, 0)}${inBand ? '，落在全案管理的合理區間' : '，高於全案管理 30–50% 的合理區間，應優先檢討營建成本與獎勵項目'}。`)}`;
+  }
+  function corePeople(at) {
+    const u = C.OLD_UNITS.find((x) => x.id === st.core.owner) || C.OLD_UNITS[0];
+    const gi = ownerGroup[u.id], g = G.owners.groups[gi];
+    const groups = C.OLD.map((b) => `<optgroup label="${esc(b.name)}">${C.OLD_UNITS.filter((x) => x.bld === b.id).map((x) => `<option value="${x.id}"${x.id === u.id ? ' selected' : ''}>${esc(x.label)}</option>`).join('')}</optgroup>`).join('');
+    return `
+      <h3>③ 地主：權利變換分配</h3>
+      <p class="note">在模型上點一戶舊家，或從清單選。Core 依都更條例 §56，按更新前權利價值的比例分配 ② 算出的地主分回總額。</p>
+      <div class="field"><label for="cOwner">我的舊家</label><select id="cOwner">${groups}</select></div>
+      <div class="tiles">
+        ${tile('更新前權利價值', `${fmt(g.pre_value)} 萬`, `${u.ping.toFixed(1)} 坪，舊屋單價 ${C.MARKET.priceOld} 萬／坪起算`, 'assume')}
+        ${tile('權值比例', pct(G.owners.value_share[u.id], 2), '占全體更新前價值', 'core')}
+        ${tile('Core 分回價值', `${fmt(at.alloc[gi])} 萬`, `地主分回總額 ${yi(at.r.owner_return_value)}`, 'core')}
+        ${tile('同意門檻', '超過 4/5', '人數與面積（都更條例 §37）', 'law')}
+      </div>
+      <h3>各類住戶</h3>
+      <div class="gtable"><div class="g-h"><span>住戶</span><span>戶數</span><span>更新前</span><span>Core 分回</span></div>
+        ${G.owners.groups.map((grp, i) => `<div class="g-r${i === gi ? ' sel' : ''}"><span>${esc(groupLabel(grp))}</span><span>${grp.members.length}</span><span>${fmt(grp.pre_value)}</span><span>${fmt(at.alloc[i])}</span></div>`).join('')}
+      </div>
+      <p class="note">金額單位萬元。全體更新前權利價值合計 ${fmt(G.owners.pre_value_total)} 萬元（示範假設）。分回價值會隨 ② 的房價與營造單價改變；要換到幾坪的新家，見〈分回試算〉章。</p>`;
+  }
+  function coreDecision(at) {
+    const cfg = G.meta.decision_config;
+    const stg = G.meta.stages[st.core.stage];
+    const fx = G.stage_fixed[stg.id];
+    const [verdict, bp, ln, lev] = at.dec[st.core.stage];
+    const V = VERDICT[verdict];
+    const evRow = (who, n, ev) => `<div class="cmp-r"><span class="rk">${who}</span><span>${fmt(n)}</span><span class="${ev <= 0 ? 'neg' : 'pos'}">${fmt(ev)}</span><span>${ev <= 0 ? '<span class="chk bad">≤ 0</span>' : '<span class="chk ok">正</span>'}</span></div>`;
+    const first = G.meta.stages[0], last = G.meta.stages[G.meta.stages.length - 1];
+    const d0 = at.dec[0], dN = at.dec[at.dec.length - 1];
+    const inp = G.meta.decision_inputs;
+    return `
+      <h3>④ 決策：三方期望值</h3>
+      <p class="note">Core 的決策引擎讀 ② 的結果，依案件階段的完工機率與剩餘年期，算地主、實施者與我方的期望值，給出 GO／CAUTION／STOP。</p>
+      ${seg('coreStage', G.meta.stages.map((s, i) => [String(i), s.label]), String(st.core.stage), '案件階段')}
+      <div class="vd ${V[0]}"><b>${verdict}</b><span>${V[1]}${bp ? `；最先轉負的是${esc(bp)}` : ''}</span></div>
+      <div class="tiles">
+        ${tile('完工機率', pct(fx.p, 1), `由「${esc(stg.tree_name)}」階段算到交屋`, 'core')}
+        ${tile('剩餘年期', `${fx.T} 年`, '到交屋結算', 'core')}
+      </div>
+      <div class="cmp"><div class="cmp-h"><b>對象（萬元）</b><b>名目</b><b>期望值</b><b></b></div>
+        ${evRow('地主', ln, lev)}${evRow('實施者', fx.impl[0], fx.impl[1])}${evRow('我方', fx.our[0], fx.our[1])}
+      </div>
+      <p class="note">地主名目值＝分回價值減更新前價值；期望值再考慮完工機率、折現率 ${pct(cfg.r, 0)}，以及不更新時舊屋價值每年成長 ${pct(cfg.g, 0)}。</p>
+      <p class="note">實施者與我方的收支沿用 BUILDER 決策引擎測試的示意值（實施者管理收入 ${fmt(inp.mgmt_fee)}、墊付 ${fmt(inp.advance)}、營運 ${fmt(inp.operating)}；我方收入 ${fmt(inp['我方收入'])}、投入 ${fmt(inp['我方投入'])} 萬元），不是本案估算。階段存活率是示意預設，尚未用真實成敗案校準：verdict 是方向性判斷，不是投資結論。</p>
+      ${say(`依 BUILDER 決策引擎，同一份財務試算在「${first.label}」階段完工機率約 ${pct(G.stage_fixed[first.id].p, 0)}，判定 ${d0[0]}；到「${last.label}」階段約 ${pct(G.stage_fixed[last.id].p, 0)}，判定 ${dN[0]}。整合期的不確定性，是地主評估都更時最大的隱性成本。`)}`;
+  }
+
+  // ── 房市：房市儀表板資料快照（js/market-data.js），數值未改 ─────────────
+  const mkRows = (id) => (MK && MK.datasets[id] ? MK.datasets[id].rows : []);
+  const safeUrl = (u) => (/^https?:\/\//.test(u || '') ? u : '');
+  // 老宅延壽資格（儀表板 renewal_rules 第 1 條）：屋齡 30 年以上的 4–6 層公寓，或 6 層以下透天。只看屋齡與樓層。
+  function renoEligible(b) {
+    if (b.keep || !/住/.test(b.use || '住宅')) return false;
+    if (2026 - b.year < 30) return false;
+    const house = b.house || b.type === 'house' || /透天|平房|街屋/.test(b.name || '');
+    return house ? b.floors <= 6 : b.floors >= 4 && b.floors <= 6;
+  }
+  const renoTint = (b) => (renoEligible(b) ? 'yes' : 'no');
+  function pMarket() {
+    if (!MK) return '<p class="warn">房市資料沒有載入（js/market-data.js），請重新整理。</p>';
+    const ytd = mkRows('ytd_2026'), credit = mkRows('credit_rules'), bank = mkRows('bank_exposure')[0];
+    const hh = mkRows('households'), rules = mkRows('renewal_rules'), sub = mkRows('renewal_subsidy');
+    const trends = mkRows('trends'), ups = mkRows('updates').slice().sort((a, b) => (a.date < b.date ? 1 : -1));
+    const homes = C.NAMED.concat(C.GENERATED).filter((b) => !b.keep && /住/.test(b.use || ''));
+    const elig = homes.filter(renoEligible).length;
+    const siteElig = C.OLD.filter((b) => renoEligible(Object.assign({ use: '住宅' }, b))).map((b) => b.id).join('、');
+    const ytdBy = Object.fromEntries(ytd.map((r) => [r.key, r]));
+    const subBy = Object.fromEntries(sub.map((r) => [r.item, r]));
+    const wan = (v) => `${fmt(v / 10000)} 萬元`;
+    const presets = [['基準', 80, 24], ['房價回落約 10%', 70, 24], ['營造上漲', 80, 28], ['兩者同時', 70, 28]];
+    return `
+      <p class="eyebrow">房市儀表板快照｜${esc(MK.as_of)}</p>
+      <h2>市場在變，這塊地的帳也跟著變</h2>
+      <p class="lead">信用管制、供給與老宅延壽的數字來自<a href="${MK.source}" target="_blank" rel="noopener">房市儀表板</a>；模型上綠色的是屋齡與樓層符合老宅延壽申請條件的建物。</p>
+      <div class="tiles">
+        ${['start', 'permit', 'complete', 'demolish'].filter((k) => ytdBy[k]).map((k) => { const r = ytdBy[k]; return tile(`${esc(r.indicator)}（2026 前三季・${esc(r.scope)}）`, `${fmt(r.value)} ${esc(r.unit)}`, `年增 ${signed(r.yoy)}`, 'data'); }).join('')}
+      </div>
+      <div class="chart" id="chartQ1"></div>
+      <h3>信用管制：房貸成數上限</h3>
+      <div>${credit.map((r) => `<div class="ltv${r.since === '2026-09-18' ? ' chg' : ''}"><span>${esc(r.buyer)}</span><b>${(r.ltv * 10).toFixed(0)} 成</b><span class="bar"><i style="width:${(r.ltv * 100).toFixed(0)}%"></i></span><small>${esc(r.since ? `${r.since} 起・` : '')}寬限期：${esc(r.grace)}。${esc(r.note)}</small></div>`).join('')}</div>
+      ${bank ? `<div class="rows">${row(esc(bank.label), pct(bank.value, 2), 'data')}</div><p class="note">${esc(bank.as_of)}：${esc(bank.note)}</p>` : ''}
+      <h3>老宅延壽：套到模型上</h3>
+      <div class="tiles">
+        ${tile('周邊符合屋齡與樓層的住宅', `${elig} 棟`, `共 ${homes.length} 棟住宅建物（以 2026 年計屋齡）`, 'model')}
+        ${tile('示範街廓', siteElig ? `${siteElig} 棟` : '—', '6 棟老屋都在 30 年以上', 'model')}
+      </div>
+      <ul class="list">${rules.map((r) => `<li>${esc(r.rule)}</li>`).join('')}</ul>
+      <p class="note">模型只檢查第 1 條（屋齡與樓層）；住戶條件與排除條件要逐棟查證。</p>
+      <div class="rows">
+        ${subBy.rate ? row(esc(subBy.rate.label), pct(subBy.rate.value, 0), 'data') : ''}
+        ${['cap_public', 'cap_elevator', 'cap_facade'].filter((k) => subBy[k]).map((k) => row(esc(subBy[k].label), wan(subBy[k].value), 'data')).join('')}
+        ${['cap_private', 'cap_private_vulnerable'].filter((k) => subBy[k]).map((k) => row(esc(subBy[k].label), `${wan(subBy[k].value)}／戶`, 'data')).join('')}
+      </div>
+      <h3>把市場情境帶進 BUILDER 四步</h3>
+      <p class="note">選一個情境，用 BUILDER Core 重看 ② 產品的總銷與共同負擔（新屋與營造單價，萬元／坪）：</p>
+      <div class="btns">${presets.map(([t, p, c]) => `<button type="button" class="btn" data-mkp="${p},${c}">${t}：${p}／${c}</button>`).join('')}</div>
+      <h3>家戶結構</h3>
+      <div class="rows">${hh.map((r) => row(esc(r.label), r.unit === '比例' ? pct(r.value, 1) : `${fmt(r.value, r.value < 100 ? 2 : 0)} ${esc(r.unit)}`, 'data')).join('')}</div>
+      <h3>區域與產品趨勢</h3>
+      <ul class="list">${trends.map((r) => `<li><b>${r.group === 'strong' ? '相對抗跌' : r.group === 'weak' ? '相對弱勢' : '產品'}</b>：${esc(r.text)}</li>`).join('')}</ul>
+      <h3>近期動態</h3>
+      <ul class="list news">${ups.map((u) => `<li><span class="date">${esc(u.date)}</span>${esc(u.event)}${safeUrl(u.url) ? ` <a href="${esc(u.url)}" target="_blank" rel="noopener">${esc(u.source)}</a>` : `（${esc(u.source)}）`}</li>`).join('')}</ul>
+      ${ytdBy.start && ytdBy.demolish ? say(`2026 年前三季住宅開工約 ${fmt(ytdBy.start.value)} 戶、年減約 ${Math.abs(Math.round(ytdBy.start.yoy * 100))}%，拆照 ${fmt(ytdBy.demolish.value)} 件、年減約 ${Math.abs(Math.round(ytdBy.demolish.yoy * 100))}%，新建供給與都更拆除同步放緩；本案財務應以房價回落約一成的情境檢驗共同負擔比。`) : ''}
+      <p class="note">快照日期 ${esc(MK.as_of)}；最新數字以<a href="${MK.source}" target="_blank" rel="noopener">房市儀表板</a>為準。</p>`;
+  }
+  function drawMarketChart() {
+    const box = $('chartQ1');
+    if (!box || !MK) return;
+    const rows = mkRows('q1_supply');
+    if (!rows.length) return;
+    const keys = [['permit', '建照', 'q1'], ['start', '開工', 'q2'], ['complete', '使照', 'q3']];
+    const W = Math.max(260, box.clientWidth || 320), H = 168, m = { l: 34, r: 12, t: 12, b: 22 };
+    const top = Math.ceil(Math.max(...rows.flatMap((r) => keys.map(([k]) => r[k]))) / 10000) * 10000;
+    const x = (i) => m.l + (i / (rows.length - 1)) * (W - m.l - m.r);
+    const y = (v) => m.t + (1 - v / top) * (H - m.t - m.b);
+    const steps = [0, top / 2, top];
+    const grid = steps.map((v) => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" class="g"/><text x="${m.l - 6}" y="${y(v) + 3.5}" class="t" text-anchor="end">${v / 10000} 萬</text>`).join('');
+    const ticks = rows.map((r, i) => (i % 3 === 0 || i === rows.length - 1 ? `<text x="${x(i)}" y="${H - 6}" class="t" text-anchor="middle">${r.year}</text>` : '')).join('');
+    const lines = keys.map(([k, , c]) => `<path class="${c}" d="${rows.map((r, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(r[k]).toFixed(1)}`).join('')}"/>`).join('');
+    const dots = keys.map(([k, name, c]) => rows.map((r, i) => `<circle class="${c}" cx="${x(i).toFixed(1)}" cy="${y(r[k]).toFixed(1)}" r="${i === rows.length - 1 ? 3.5 : 2.2}"><title>${r.quarter} ${name} ${fmt(r[k])} 宅</title></circle>`).join('')).join('');
+    const notes = rows.filter((r) => r.note).map((r) => `${esc(r.quarter)}：${esc(r.note)}`).join('；');
+    box.innerHTML = `<div class="chart-h"><b>歷年第一季住宅（宅）</b>${keys.map(([, n, c]) => `<span class="lg"><i class="${c}"></i>${n}</span>`).join('')}</div>
+      <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="2017 到 2026 年第一季住宅建照、開工、使照宅數">${grid}${ticks}${lines}${dots}</svg>
+      ${notes ? `<p class="chart-tip">${notes}</p>` : ''}`;
+  }
+
   // ── 章節 ───────────────────────────────────────────────────────
-  const CHAPTERS = ['overview', 'compare', 'bonus', 'sun', 'share', 'city', 'future'];
+  const CHAPTERS = ['overview', 'compare', 'bonus', 'sun', 'share', 'case', 'market', 'city', 'future'];
   const chapterBtns = [...document.querySelectorAll('#chapters [data-ch]')];
   chapterBtns.forEach((b) => b.addEventListener('click', () => go(b.dataset.ch, true)));
 
@@ -306,6 +562,8 @@
     S.setHeat('left', null);
     S.setHeat('right', null);
     S.setSim(null);
+    if (ch !== 'case') restoreMass();
+    S.setCtxTint(ch === 'market' ? renoTint : null);
     applyLayers(ch);
     const cam = (v) => { if (moveCam !== false) setView(v); };
     if (ch === 'overview') { S.setScenario('now'); cam('aerial'); }
@@ -313,6 +571,8 @@
     else if (ch === 'bonus') { S.setScenario(st.route); cam('site'); }
     else if (ch === 'sun') { applySun(); cam('sun'); }
     else if (ch === 'share') { S.setCompare('now', 'urban'); swipe.hidden = false; renderFloors(); floorsEl.hidden = false; S.highlightFloor(st.share.floor); S.highlightNewUnit(st.share.unit); S.highlightOld(st.share.oldId); cam('site'); }
+    else if (ch === 'case') { showCoreMass(); cam('site'); }
+    else if (ch === 'market') { S.setScenario('now'); cam('city'); }
     else if (ch === 'city') { runSim(); cam('city'); }
     else if (ch === 'future') { S.setScenario('urban'); cam('aerial'); }
     renderPanel();
@@ -338,11 +598,12 @@
   // ── 面板 ───────────────────────────────────────────────────────
   function renderPanel() {
     const ch = st.chapter;
-    const html = ({ overview: pOverview, compare: pCompare, bonus: pBonus, sun: pSun, share: pShare, city: pCity, future: pFuture })[ch]();
+    const html = ({ overview: pOverview, compare: pCompare, bonus: pBonus, sun: pSun, share: pShare, case: pCase, market: pMarket, city: pCity, future: pFuture })[ch]();
     panelBody.innerHTML = html;
     panelBody.scrollTop = 0;
     bindPanel();
     if (ch === 'city') drawCharts();
+    if (ch === 'market') drawMarketChart();
   }
 
   function pOverview() {
@@ -350,7 +611,7 @@
     return `
       <p class="eyebrow">示範案｜${esc(C.GEO.place)}</p>
       <h2>一個 1970 年代街廓，四種未來</h2>
-      <p class="lead">這塊 2,560 ㎡ 的完整街廓有 6 棟 2–5 層老屋、${C.OLD_UNITS.length} 戶，屋齡 ${Math.min(...ages)}–${Math.max(...ages)} 年，全部沒有電梯。拖動模型看周邊，或依序走完下面六章。</p>
+      <p class="lead">這塊 2,560 ㎡ 的完整街廓有 6 棟 2–5 層老屋、${C.OLD_UNITS.length} 戶，屋齡 ${Math.min(...ages)}–${Math.max(...ages)} 年，全部沒有電梯。拖動模型看周邊，或依序走完下面八章。</p>
       <div class="tiles">
         ${tile('基地面積', '2,560 ㎡', '64 × 40 m 完整街廓', 'assume')}
         ${tile('使用分區', '住宅區', '建蔽 50%・容積 300%', 'law')}
@@ -364,13 +625,15 @@
         <li><b>街道</b>：騎樓斷續、無停車位，路邊停車占用人行空間。</li>
         <li><b>違建</b>：A、B、C 棟頂樓加蓋，不列入合法建物的權利價值（拆遷補償另計）。</li>
       </ul>
-      <h3>接下來六章</h3>
+      <h3>接下來八章</h3>
       <div class="chapters-list">
         ${[
           ['compare', '方案比較', '拖曳捲簾比較現況、老宅延壽、危老、都更'],
           ['bonus', '容積獎勵', '逐項勾選獎勵，看量體長高與上限'],
           ['sun', '日照陰影', '冬至日照時數與建技規則 §39-1 檢討'],
           ['share', '分回試算', '選你的舊家，看能換回幾坪'],
+          ['case', 'BUILDER 四步', '同一塊地交給 BUILDER 計算核心：容積、共負、分回、GO／STOP'],
+          ['market', '房市', '信用管制、供給與老宅延壽資格，套到模型上'],
           ['city', '城市模擬', '2026–2046 年整個街區怎麼變'],
           ['future', '2050', '淨零、韌性、高齡、移動、複合五個鏡頭'],
         ].map(([id, t, d]) => `<button type="button" class="ch-card" data-go="${id}"><b>${t}</b><span>${d}</span></button>`).join('')}
@@ -839,6 +1102,34 @@
         r.addEventListener('change', () => { P[key] = Number(r.value) / 100; onPol(); });
       });
     }
+    if (ch === 'case') {
+      const keep = () => { const y = panelBody.scrollTop; renderPanel(); panelBody.scrollTop = y; };
+      bindSeg('coreStep', (v) => { st.core.step = v; showCoreMass(); renderPanel(); });
+      bindSeg('coreStage', (v) => { st.core.stage = Number(v); keep(); });
+      const live = (id, apply, label) => {
+        const e = $(id);
+        if (!e) return;
+        e.addEventListener('input', () => { apply(Number(e.value)); $(id + 'V').textContent = label(Number(e.value)); showCoreMass(); });
+        e.addEventListener('change', () => { apply(Number(e.value)); showCoreMass(); keep(); });
+      };
+      live('cB', (v) => { st.core.b = v; }, (v) => `${Math.round(BG.bonus[v] * 100)}%`);
+      live('cF', (v) => { st.core.floors = v; }, (v) => `${v} 層（${v + 2}F）`);
+      live('cP', (v) => { st.core.p = v; }, (v) => `${BG.price[v]} 萬／坪`);
+      live('cC', (v) => { st.core.c = v; }, (v) => `${BG.cost[v]} 萬／坪`);
+      const fitBtn = $('cFit');
+      if (fitBtn) fitBtn.addEventListener('click', () => { st.core.floors = null; showCoreMass(); keep(); });
+      const own = $('cOwner');
+      if (own) own.addEventListener('change', () => { st.core.owner = own.value; S.highlightOld(own.value); keep(); });
+    }
+    if (ch === 'market') {
+      panelBody.querySelectorAll('[data-mkp]').forEach((b) => b.addEventListener('click', () => {
+        const [pv, cv] = b.dataset.mkp.split(',').map(Number);
+        st.core.p = BG.price.indexOf(pv);
+        st.core.c = BG.cost.indexOf(cv);
+        st.core.step = 'product';
+        go('case', true);
+      }));
+    }
     if (ch === 'future') {
       bindSeg('lens', (v) => { st.lens = v; applyLayers('future'); renderPanel(); lensCamera(v); });
     }
@@ -873,6 +1164,7 @@
   function recompute() {
     computeMass();
     S.rebuildUrban(MASS.stack);
+    urbanFor = 'mass';
     S.rebuildDangerous(MASS.dangerous);
     if (st.chapter === 'share') { renderFloors(); S.highlightFloor(st.share.floor); }
   }
@@ -1063,6 +1355,10 @@
   }
   function hideHover() { hoverEl.hidden = true; }
   function onPick(p, e) {
+    if (st.chapter === 'case' && st.core.step === 'people' && p && p.type === 'old') {
+      st.core.owner = p.unit.id; S.highlightOld(p.unit.id);
+      const y = panelBody.scrollTop; renderPanel(); panelBody.scrollTop = y;
+    }
     if (st.chapter === 'share' && p) {
       if (p.type === 'old') { st.share.oldId = p.unit.id; S.highlightOld(p.unit.id); suggestUnit(); renderPanel(); }
       else if (p.type === 'tower') { selectFloor(p.floorNo); }
@@ -1176,6 +1472,7 @@
       S.setOffset(panel.offsetWidth + 20, 0);
     }
     if (st.chapter === 'city') drawCharts();
+    if (st.chapter === 'market') drawMarketChart();
   }
   new ResizeObserver(() => layoutOffsets()).observe(stage);
 
@@ -1199,6 +1496,6 @@
   window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (h && h !== st.chapter) go(h, false, true); });
   const first = location.hash.slice(1);
   go(CHAPTERS.indexOf(first) >= 0 ? first : 'overview', false, false);
-  setView(({ overview: 'aerial', compare: 'site', bonus: 'site', sun: 'sun', share: 'site', city: 'city', future: 'aerial' })[st.chapter]);
+  setView(({ overview: 'aerial', compare: 'site', bonus: 'site', sun: 'sun', share: 'site', case: 'site', market: 'city', city: 'city', future: 'aerial' })[st.chapter]);
   window.__app = { st, S, get MASS() { return MASS; }, go };
 })();
